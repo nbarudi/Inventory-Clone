@@ -3660,7 +3660,7 @@ TALENT.Name = "Butterfingers"
 TALENT.NameColor = Color(231,209,10)
 TALENT.Description = "Each hit has a %s_^ chance to cause the enemy to drop their weapon"
 TALENT.Tier = 3
-TALENT.LevelRequired = {min = 0, max = 0}
+TALENT.LevelRequired = {min = 25, max = 30}
 TALENT.NotUnique = false 
 
 TALENT.Modifications = {}
