@@ -21232,7 +21232,7 @@ ITEM.Name = "Batman Model"
 ITEM.Description = "A special model from the holiday season"
 ITEM.Model = "models/player/superheroes/batman.mdl"
 ITEM.Rarity = 5
-ITEM.Collection = "Holiday Collection"
+ITEM.Collection = "Gritsky Collection"
 
 function ITEM:OnPlayerSpawn(ply)
 	timer.Simple( 1, function() ply:SetModel( self.Model ) end )
@@ -35233,3 +35233,703 @@ end
 m_AddDroppableItem(ITEM, 'Model')
 
 if (CLIENT) then m_AddCosmeticItem(ITEM, 'Model') end
+
+--[[
+ITEM = {}
+ITEM.ID = 7095
+ITEM.Name = "Coal"
+ITEM.Rarity = 9
+ITEM.Collection = "Holiday Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 23, max = 33 },
+	Range = { min = 23, max = 33 },
+	Weight = { min = -5, max = -7 }
+}
+ITEM.MinTalents = 4
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+]]
+
+//Gritsky Crate
+
+
+ITEM = {}
+ITEM.ID = 6426
+ITEM.Name = "Vertex"
+ITEM.Rarity = 9
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 9
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 19, max = 32 },
+	Accuracy = { min = 19, max = 32 },
+	Kick = { min = -19, max = -32 },
+	Firerate = { min = 19, max = 32 },
+	Magazine = { min = 23, max = 33 },
+	Range = { min = 23, max = 33 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 4
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6427
+ITEM.Name = "Corvidae"
+ITEM.WeaponClass = "weapon_ttt_te_m24"
+ITEM.Rarity = 9
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 9
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 19, max = 32 },
+	Accuracy = { min = 19, max = 32 },
+	Kick = { min = -19, max = -32 },
+	Firerate = { min = 19, max = 32 },
+	Magazine = { min = 23, max = 33 },
+	Range = { min = 23, max = 33 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 4
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "Explosive", "random", "random"}
+m_AddDroppableItem(ITEM, 'Unique')
+
+ITEM = {}
+ITEM.ID = 6428
+ITEM.Name = "Microchipped"
+ITEM.NameColor = Color(10,127,223)
+ITEM.NameEffect = "enchanted"
+ITEM.NameEffectMods = {Color(175,2,146)}
+ITEM.WeaponClass = "weapon_xm8b"
+ITEM.Rarity = 7
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 8
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 17, max = 28 },
+	Range = { min = 23, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 4
+ITEM.Talents = {"Energizing", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'Unique')
+
+ITEM = {}
+ITEM.ID = 6429
+ITEM.Name = "Tax Collector"
+ITEM.NameColor = Color(10,127,223)
+ITEM.NameEffect = "electric"
+ITEM.WeaponClass = "weapon_ttt_mp5"
+ITEM.Rarity = 7
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 8
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 17, max = 28 },
+	Range = { min = 23, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'Unique')
+
+ITEM = {}
+ITEM.ID = 6430
+ITEM.Name = "Plasma"
+ITEM.Rarity = 7
+ITEM.Collection = "Gritsky Collection"
+ITEM.NameEffect = "glow"
+ITEM.MinStats = 8
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 17, max = 28 },
+	Range = { min = 23, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 4
+ITEM.Talents = {"Energizing", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6431
+ITEM.Name = "MKUltra"
+ITEM.Rarity = 7
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 8
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 17, max = 28 },
+	Range = { min = 23, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6432
+ITEM.Name = "AGOGE ELITE"
+ITEM.Rarity = 6
+ITEM.Collection = "Gritsky Collection"
+ITEM.WeaponClass = "weapon_ttt_mp5k"
+ITEM.MinStats = 7
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 15, max = 25 },
+	Accuracy = { min = 15, max = 25 },
+	Kick = { min = -15, max = -25 },
+	Firerate = { min = 15, max = 25 },
+	Magazine = { min = 15, max = 25 },
+	Range = { min = 15, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"Close Quarters", "random", "random"}
+m_AddDroppableItem(ITEM, 'Unique')
+
+ITEM = {}
+ITEM.ID = 6433
+ITEM.Name = "Bingus"
+ITEM.Rarity = 6
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 15, max = 25 },
+	Accuracy = { min = 15, max = 25 },
+	Kick = { min = -15, max = -25 },
+	Firerate = { min = 15, max = 25 },
+	Magazine = { min = 15, max = 25 },
+	Range = { min = 15, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6434
+ITEM.Name = "Snipers Springfield"
+ITEM.Rarity = 6
+ITEM.Collection = "Gritsky Collection"
+ITEM.WeaponClass = "weapon_ttt_mp5k"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 45, max = 45 },
+	Accuracy = { min = 15, max = 25 },
+	Kick = { min = -15, max = -25 },
+	Firerate = { min = -15, max = -15 },
+	Magazine = { min = 15, max = 25 },
+	Range = { min = 15, max = 28 },
+	Weight = { min = -5, max = -12 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"Close Quarters", "random", "random"}
+m_AddDroppableItem(ITEM, 'Unique')
+
+ITEM = {}
+ITEM.ID = 6435
+ITEM.Name = "Fabled"
+ITEM.Rarity = 6
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 15, max = 25 },
+	Accuracy = { min = 15, max = 25 },
+	Kick = { min = -15, max = -25 },
+	Firerate = { min = 15, max = 25 },
+	Magazine = { min = 15, max = 25 },
+	Range = { min = 15, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6436
+ITEM.Name = "Above Average"
+ITEM.Rarity = 5
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 12, max = 22 },
+	Accuracy = { min = 12, max = 22 },
+	Kick = { min = -15, max = -25 },
+	Firerate = { min = 12, max = 22 },
+	Magazine = { min = 12, max = 22 },
+	Range = { min = 12, max = 22 },
+	Weight = { min = 12, max = 22 },
+	Reloadrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 2
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6437
+ITEM.Name = "Flaming"
+ITEM.Rarity = 5
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 15, max = 25 },
+	Accuracy = { min = 15, max = 25 },
+	Kick = { min = -15, max = -25 },
+	Firerate = { min = 15, max = 25 },
+	Magazine = { min = 15, max = 25 },
+	Range = { min = 15, max = 28 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "Inferno"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6438
+ITEM.Name = "Designer"
+ITEM.Rarity = 4
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 3
+ITEM.MaxStats = 6
+ITEM.Stats = {
+	Damage = { min = 10, max = 20 },
+	Accuracy = { min = 10, max = 20 },
+	Kick = { min = -10, max = -20 },
+	Firerate = { min = 10, max = 20 },
+	Magazine = { min = 10, max = 20 },
+	Range = { min = 10, max = 20 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 5, max = 12 }
+}
+ITEM.MinTalents = 2
+ITEM.MaxTalents = 2
+ITEM.Talents = {"random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6439
+ITEM.Name = "Trolling"
+ITEM.Rarity = 4
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 3
+ITEM.MaxStats = 6
+ITEM.Stats = {
+	Damage = { min = 10, max = 20 },
+	Accuracy = { min = 10, max = 20 },
+	Kick = { min = -10, max = -20 },
+	Firerate = { min = 10, max = 20 },
+	Magazine = { min = 10, max = 20 },
+	Range = { min = 10, max = 20 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 5, max = 12 }
+}
+ITEM.MinTalents = 2
+ITEM.MaxTalents = 2
+ITEM.Talents = {"random", "Butterfingers"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6440
+ITEM.Name = "Deadly"
+ITEM.Rarity = 3
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 3
+ITEM.MaxStats = 6
+ITEM.Stats = {
+	Damage = { min = 10, max = 20 },
+	Accuracy = { min = 10, max = 20 },
+	Kick = { min = -10, max = -20 },
+	Firerate = { min = 10, max = 20 },
+	Magazine = { min = 10, max = 20 },
+	Range = { min = 10, max = 20 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 5, max = 12 }
+}
+ITEM.MinTalents = 0
+ITEM.MaxTalents = 2
+ITEM.Talents = {"random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6441
+ITEM.Name = "Makeshift"
+ITEM.Rarity = 2
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 2
+ITEM.MaxStats = 4
+ITEM.Stats = {
+	Damage = { min = 10, max = 20 },
+	Accuracy = { min = 10, max = 20 },
+	Kick = { min = -10, max = -20 },
+	Firerate = { min = 10, max = 20 },
+	Magazine = { min = 10, max = 20 },
+	Range = { min = 10, max = 20 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 5, max = 12 }
+}
+ITEM.MinTalents = 0
+ITEM.MaxTalents = 1
+ITEM.Talents = {"random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.ID = 6442
+ITEM.Name = "Scammed"
+ITEM.Rarity = 1
+ITEM.Collection = "Gritsky Collection"
+ITEM.MinStats = 1
+ITEM.MaxStats = 4
+ITEM.Stats = {
+	Damage = { min = 10, max = 20 },
+	Accuracy = { min = 10, max = 20 },
+	Kick = { min = -10, max = -20 },
+	Firerate = { min = 10, max = 20 },
+	Magazine = { min = 10, max = 20 },
+	Range = { min = 10, max = 20 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 5, max = 12 }
+}
+ITEM.MinTalents = 0
+ITEM.MaxTalents = 1
+ITEM.Talents = {"random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+/*
+ITEM = {}
+ITEM.ID = 19912
+ITEM.Name = "Oldies Crate"
+ITEM.NameEffect = "glow"
+ITEM.Description = "This crate contains an item from the Oldies Collection! Right click to open"
+ITEM.Image = "https://gritskygaming.net/public/ttt/crates/box_legend.png"
+ITEM.Rarity = 4
+ITEM.Collection = "Oldies Collection"
+ITEM.Active = false
+ITEM.Stackable = true
+ITEM.Price = 1420
+ITEM.NewItem = 1555398001
+m_AddDroppableItem(ITEM, 'Crate')
+
+*/
+
+ITEM = {}
+ITEM.ID = 6425
+ITEM.Name = "Gritsky Crate"
+ITEM.Description = "This crate contains an item from the Gritsky Collection! Right click to open"
+ITEM.Image = "https://media.discordapp.net/attachments/845762236651798549/846537045652144148/4231881996.png"
+ITEM.Rarity = 2
+ITEM.Collection = "Gritsky Collection"
+ITEM.Active = true 
+ITEM.Stackable = true 
+ITEM.Price = 250
+m_AddDroppableItem(ITEM, "Crate")
+
+/*
+ITEM = {}
+ITEM.Name = "Ascended Stat Mutator"
+ITEM.ID = 4006
+ITEM.Description = "Using this item allows you to re-roll the stats of any Ascended item"
+ITEM.Rarity = 6
+ITEM.Active = false
+ITEM.NewItem = 1575878400
+ITEM.Price = 80000
+ITEM.Collection = "Gamma Collection"
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/ascended_stat64.png"
+ITEM.ItemCheck = 7
+ITEM.ItemUsed = function(pl, slot, item)
+	m_ResetStats(pl, slot, item)
+    m_SendInvItem(pl, slot)
+end
+m_AddDroppableItem(ITEM, 'Usable')
+*/
+
+ITEM = {}
+ITEM.Name = "Weapon Mutator"
+ITEM.ID = 6443
+ITEM.Description = "Using this item allows you to re-roll the type of weapon while keeping the talents."
+ITEM.Rarity = 8
+ITEM.Active = true
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+ITEM.Price = 90000
+ITEM.Collection = "Gamma Collection"
+ITEM.NotDroppable = true
+ITEM.ItemCheck = 9
+ITEM.ItemUsed = function(pl, slot, item)
+	m_MutateWeapon(pl, slot, item)
+	m_SendInvItem(pl, slot)
+end
+m_AddDroppableItem(ITEM, "Usable")
+
+ITEM = {}
+ITEM.Name = "Rarity Mutator"
+ITEM.ID = 6444
+ITEM.Description = "Using this item allows you to change the rarity of a weapon"
+ITEM.Rarity = 9
+ITEM.Active = true
+ITEM.NotDroppable = true
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+ITEM.Price = 150000
+ITEM.Collection = "Gamma Collection"
+ITEM.ItemCheck = 9
+ITEM.ItemUsed = function(pl, slot, item)
+	m_MutateRarity(pl, slot, item)
+	m_SendInvItem(pl, slot)
+end
+m_AddDroppableItem(ITEM, "Usable")
+
+ITEM = {}
+ITEM.Name = "Planetary"
+ITEM.ID = 6445
+ITEM.Rarity = 9
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 9
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 19, max = 32 },
+	Accuracy = { min = 19, max = 32 },
+	Kick = { min = -19, max = -32 },
+	Firerate = { min = 19, max = 32 },
+	Magazine = { min = 23, max = 33 },
+	Range = { min = 23, max = 33 },
+	Weight = { min = -5, max = -12 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 4
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Cosmic"
+ITEM.ID = 6446
+ITEM.Rarity = 7
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 8
+ITEM.MaxStats = 9
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 17, max = 28 },
+	Range = { min = 17, max = 28 },
+	Weight = { min = -5, max = -28 },
+	Reloadrate = { min = 23, max = 33 },
+	Deployrate = { min = 23, max = 33 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 4
+ITEM.Talents = {"random", "random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Ascended"
+ITEM.ID = 6447
+ITEM.Rarity = 6
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 8
+ITEM.Stats = {
+	Damage = { min = 16, max = 24 },
+	Accuracy = { min = 16, max = 24 },
+	Kick = { min = -16, max = -24 },
+	Firerate = { min = 16, max = 24 },
+	Magazine = { min = 16, max = 24 },
+	Range = { min = 16, max = 24 },
+	Weight = { min = -5, max = -24 },
+	Reloadrate = { min = 16, max = 24 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "High-End"
+ITEM.ID = 6448
+ITEM.Rarity = 5
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -5, max = -24 }
+}
+ITEM.MinTalents = 2
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Superior"
+ITEM.ID = 6449
+ITEM.Rarity = 4
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 6
+ITEM.Stats = {
+	Damage = { min = 10, max = 17 },
+	Accuracy = { min = 10, max = 17 },
+	Kick = { min = -10, max = -17 },
+	Firerate = { min = 10, max = 17 },
+	Magazine = { min = 10, max = 17 },
+	Range = { min = 10, max = 17 },
+	Weight = { min = -5, max = -24 }
+}
+ITEM.MinTalents = 2
+ITEM.MaxTalents = 2
+ITEM.Talents = {"random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Specialized"
+ITEM.ID = 6450
+ITEM.Rarity = 3
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 4
+ITEM.MaxStats = 5
+ITEM.Stats = {
+	Damage = { min = 7, max = 12 },
+	Accuracy = { min = 7, max = 12 },
+	Kick = { min = -7, max = -12 },
+	Firerate = { min = 7, max = 12 },
+	Magazine = { min = 7, max = 12 },
+	Range = { min = 7, max = 12 },
+	Weight = { min = -5, max = -24 }
+}
+ITEM.MinTalents = 0
+ITEM.MaxTalents = 2
+ITEM.Talents = {"random", "random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Standard"
+ITEM.ID = 6451
+ITEM.Rarity = 2
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 3
+ITEM.MaxStats = 5
+ITEM.Stats = {
+	Damage = { min = 7, max = 9 },
+	Accuracy = { min = 7, max = 9 },
+	Kick = { min = -7, max = -9 },
+	Firerate = { min = 7, max = 9 },
+	Magazine = { min = 7, max = 9 },
+	Range = { min = 7, max = 9 },
+	Weight = { min = -5, max = -9 }
+}
+ITEM.MinTalents = 0
+ITEM.MaxTalents = 1
+ITEM.Talents = {"random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Worn"
+ITEM.ID = 6452
+ITEM.Rarity = 1
+ITEM.NotDroppable = true 
+ITEM.Collection = "Mutated Collection"
+ITEM.MinStats = 1
+ITEM.MaxStats = 3
+ITEM.Stats = {
+	Damage = { min = 7, max = 9 },
+	Accuracy = { min = 7, max = 9 },
+	Kick = { min = -7, max = -9 },
+	Firerate = { min = 7, max = 9 },
+	Magazine = { min = 7, max = 9 },
+	Range = { min = 7, max = 9 },
+	Weight = { min = -5, max = -9 }
+}
+ITEM.MinTalents = 0
+ITEM.MaxTalents = 1
+ITEM.Talents = {"random"}
+m_AddDroppableItem(ITEM, 'tier')
+
+ITEM = {}
+ITEM.Name = "Level Mutator"
+ITEM.ID = 6453
+ITEM.Description = "Using this item allows you to max out the level of your weapon"
+ITEM.Rarity = 8
+ITEM.Active = false
+ITEM.NotDroppable = true
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+ITEM.Price = 150000
+ITEM.Collection = "Gamma Collection"
+ITEM.ItemCheck = 9
+ITEM.ItemUsed = function(pl, slot, item)
+	m_MutateLevel(pl, slot, item)
+	m_SendInvItem(pl, slot)
+end
+m_AddDroppableItem(ITEM, "Usable")

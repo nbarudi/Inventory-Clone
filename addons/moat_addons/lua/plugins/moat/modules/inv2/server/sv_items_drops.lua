@@ -812,6 +812,68 @@ function m_ResetTalents(pl, wep_slot, itemtbl)
     m_SendInvItem(pl, wep_slot)
 end
 
+function m_MutateWeapon(pl, wep_slot, itemtbl)
+    local ply_item = MOAT_INVS[pl]["slot" .. wep_slot]
+	local temptbl = itemtbl.item
+
+    if(temptbl.Kind == "Unique" or temptbl.Kind == "Melee") then
+        D3A.Chat.SendToPlayer2(pl, moat_yellow, "You cannot mutate a " .. temptbl.Kind .. "!")
+        D3A.Chat.SendToPlayer2(pl, moat_yellow, "You have been refunded!")
+        pl:m_DropInventoryItem("Weapon Mutator", "hide_chat_obtained")
+        return 
+    end
+
+    local wClass
+
+    for k, v in RandomPairs(weapons.GetList()) do
+        if (v.AutoSpawnable and v.Base == "weapon_tttbase") then
+            wClass = v
+            break 
+        end
+    end
+
+    ply_item.w = wClass.ClassName
+    m_SaveInventory(pl)
+    m_SendInvItem(pl, wep_slot)
+    m_ResetStats(pl, wep_slot, itemtbl)
+    
+end
+
+function m_MutateRarity(pl, wep_slot, itemtbl)
+    local ply_item = MOAT_INVS[pl]["slot" .. wep_slot]
+	local temptbl = itemtbl.item
+
+    if(temptbl.Kind == "Unique" or temptbl.Kind == "Melee") then
+        D3A.Chat.SendToPlayer2(pl, moat_yellow, "You cannot mutate a " .. temptbl.Kind .. "!")
+        D3A.Chat.SendToPlayer2(pl, moat_yellow, "You have been refunded!")
+        pl:m_DropInventoryItem("Rarity Mutator", "hide_chat_obtained")
+        return 
+    end
+
+    local new_rarity = math.random(6445, 6452)
+    ply_item.u = new_rarity
+
+    local new_tbl = {item=GetItemFromEnum(ply_item.u)}
+    
+    local r_name = rarity_names[new_tbl.item.Rarity]
+    D3A.Chat.SendToPlayer2(pl, moat_yellow, "You have mutated your weapon into a ", r_name[2], r_name[1], moat_yellow, " weapon!")
+
+    //print(table.ToString(new_tbl))
+    m_SaveInventory(pl)
+    m_SendInvItem(pl, wep_slot)
+    m_ResetStats(pl, wep_slot, new_tbl)
+    m_ResetTalents(pl, wep_slot, new_tbl)
+end
+
+function m_MutateLevel(pl, wep_slot, itemtbl)
+    local ply_item = MOAT_INVS[pl]["slot" .. wep_slot]
+	local temptbl = itemtbl.item
+
+    ply_item.s.l = 9001
+    m_SaveInventory(pl)
+    m_SendInvItem(pl, wep_slot)
+end
+
 function m_AssignDogLover(pl, wep_slot, itemtbl)
     local ply_item = MOAT_INVS[pl]["slot" .. wep_slot]
     local talent_index = 2

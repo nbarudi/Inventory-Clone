@@ -3623,3 +3623,56 @@ end
 
 
 m_AddTalent(TALENT)
+
+/*
+TALENT = {}
+TALENT.ID = 40
+TALENT.Name = "Mute"
+TALENT.NameColor = Color(27, 27, 27)
+TALENT.Description = "Each hit has a %s_^ chance to mute the target for %s seconds"
+TALENT.Tier = 2
+TALENT.LevelRequired = { min = 15, max = 20 }
+
+TALENT.Modifications = {}
+TALENT.Modifications[1] = { min = 5, max = 10 }	-- Chance to mute
+TALENT.Modifications[2] = { min = 4, max = 8 }	-- Mute time
+
+TALENT.Melee = true
+TALENT.NotUnique = true
+
+function TALENT:OnPlayerHit(victim, attacker, dmginfo, talent_mods)
+	if (GetGlobal("MOAT_MINIGAME_ACTIVE")) then return end
+	if (GetRoundState() ~= ROUND_ACTIVE) then return end
+
+	local chance = self.Modifications[1].min + ( ( self.Modifications[1].max - self.Modifications[1].min ) * talent_mods[1] )
+	if (chance > math.random() * 100) then
+		status.Inflict("Muted", {
+			Victim = victim,
+			Time = self.Modifications[2].min + ( ( self.Modifications[2].max - self.Modifications[2].min ) * talent_mods[2] )
+		})
+	end
+end
+*/
+
+TALENT = {}
+TALENT.ID = 42
+TALENT.Name = "Butterfingers"
+TALENT.NameColor = Color(231,209,10)
+TALENT.Description = "Each hit has a %s_^ chance to cause the enemy to drop their weapon"
+TALENT.Tier = 3
+TALENT.LevelRequired = {min = 0, max = 0}
+TALENT.NotUnique = false 
+
+TALENT.Modifications = {}
+TALENT.Modifications[1] = {min=1, max=7}
+
+function TALENT:OnPlayerHit(victim, attacker, dmginfo, talent_mods)
+	if (GetGlobal("MOAT_MINIGAME_ACTIVE")) then return end
+	if (GetRoundState() ~= ROUND_ACTIVE) then return end
+
+	local chance = self.Modifications[1].min + ( ( self.Modifications[1].max - self.Modifications[1].min ) * talent_mods[1] )
+	if (chance > math.random() * 100) then
+		victim:ConCommand("ttt_dropweapon")
+	end
+end
+m_AddTalent(TALENT)
