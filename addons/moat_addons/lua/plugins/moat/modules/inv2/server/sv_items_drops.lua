@@ -850,7 +850,7 @@ function m_MutateRarity(pl, wep_slot, itemtbl)
         return 
     end
 
-    local new_rarity = math.random(6445, 6452)
+    local new_rarity = math.random(6445, 6449)
     ply_item.u = new_rarity
 
     local new_tbl = {item=GetItemFromEnum(ply_item.u)}

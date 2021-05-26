@@ -3,6 +3,31 @@ MOAT_CRATES = {}
 MOAT_CRATESAVE = {}
 MOAT_CRATEROLLED = {}
 
+//Made this as a quick way to buff a spesific crate.
+function buffCrate(crate_collection, num_crates)
+
+    if(num_crates < 2) then
+        return m_GetRandomInventoryItem(crate_collection)
+    end
+    
+    local item_storage = {}
+    for i = 0, num_crates do
+        table.insert(item_storage, m_GetRandomInventoryItem(crate_collection))
+    end
+
+    local returned_item = {}
+    local rarity = 0
+    for i,v in pairs(item_storage) do
+        local item = GetItemFromEnum(v.u)
+        if(item.Rarity > rarity) then
+            rarity = item.Rarity
+            returned_item = v
+        end
+    end
+
+    return returned_item
+end
+
 net.Receive("MOAT_VERIFY_CRATE", function(len, ply)
 	-- if (shop_net_spam(ply, "MOAT_VERIFY_CRATE")) then return end
 
@@ -31,6 +56,10 @@ net.Receive("MOAT_VERIFY_CRATE", function(len, ply)
         local crate_collection = GetItemFromEnum(crate_id).Collection
 
         local tbl2 = m_GetRandomInventoryItem(crate_collection)
+        //If its the gritsky crate then it'll buff the crate.
+        if(crate_collection == "Gritsky Collection") then
+            tbl2 = buffCrate(crate_collection, 2)
+        end
         tbl2.item = GetItemFromEnum(tbl2.u)
 
         if (tbl2.w) then
@@ -68,6 +97,10 @@ net.Receive("MOAT_INIT_CRATE", function(len, ply)
     for i = 1, 100 do
         timer.Simple(i * 0.01, function()
             local tbl2 = m_GetRandomInventoryItem(crate_collection)
+            //If its the gritsky crate then it'll buff the crate.
+            if(crate_collection == "Gritsky Collection") then
+                tbl2 = buffCrate(crate_collection, 2)
+            end
             net.Start("MOAT_ITEMS_CRATE")
             net.WriteTable(tbl2)
             net.Send(ply)

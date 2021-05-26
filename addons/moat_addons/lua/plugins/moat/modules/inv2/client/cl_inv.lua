@@ -1239,6 +1239,7 @@ MOAT_INV_BG_W = 400 + 350// + 105
 MOAT_INV_BG_H = 550 + 5// + 25
 
 MOAT_ITEMS_DECON_MARKED = MOAT_ITEMS_DECON_MARKED or 0
+MOAT_CRATE_OPEN_MARKED = MOAT_CRATE_OPEN_MARKED or 0
 M_TRADE_PLYTBL = M_TRADE_PLYTBL or {}
 local light_gradient = Material("sprites/light_ignorez")
 local circ_gradient = Material("moat_inv/moat_circle_grad.png")
@@ -1379,8 +1380,13 @@ function m_OpenInventory(ply2, utrade)
 	for i = 1, #m_Inventory do
 		if (m_Inventory[i]) then
             m_Inventory[i].decon = false
+            m_Inventory[i].mass_open = false
         end
 	end
+
+    MOAT_CRATE_OPEN_MARKED = 0
+    MOAT_OPEN_ITEMS_START = 0
+    MOAT_OPEN_ITEMS_END = 0
 
     MOAT_ITEMS_DECON_MARKED = 0
     MOAT_DECONSTRUCT_ITEMS_START = 0
@@ -2553,6 +2559,9 @@ function m_OpenInventory(ply2, utrade)
 			if (m_Inventory[num].decon) then
 				surface_SetDrawColor(150, 0, 0, 200)
 				surface_DrawRect(0, 0, w, h)
+            elseif(m_Inventory[num].mass_open) then
+                surface_SetDrawColor(0, 150, 0, 200)
+				surface_DrawRect(0, 0, w, h)
 			end
 		end
     end
@@ -2833,6 +2842,9 @@ function m_OpenInventory(ply2, utrade)
 					if (m_Inventory[num].decon) then
 						surface_SetDrawColor(150, 0, 0, 200)
 						surface_DrawRect(0, 0, w, h)
+                    elseif(m_Inventory[num].mass_open) then
+                        surface_SetDrawColor(0, 150, 0, 200)
+                        surface_DrawRect(0, 0, w, h)
 					end
 				end
 			end
@@ -2914,14 +2926,25 @@ function m_OpenInventory(ply2, utrade)
 					
 					moat_RemoveEditPositionPanel()
 
-					if (m_Inventory[num].decon) then
-						m_Inventory[num].decon = false
-						MOAT_ITEMS_DECON_MARKED = math.Clamp(MOAT_ITEMS_DECON_MARKED - 1, 0, 1000)
-					else
-						m_Inventory[num].decon = true
-						MOAT_ITEMS_DECON_MARKED = math.Clamp(MOAT_ITEMS_DECON_MARKED + 1, 0, 1000)
-						m_DrawDeconButton(MOAT_INV_BG)
-					end
+                    if(m_Inventory[num].item.Kind == "Crate" and MOAT_ITEMS_DECON_MARKED <= 0) then
+                        if(m_Inventory[num].mass_open) then
+                            m_Inventory[num].mass_open = false
+                            MOAT_CRATE_OPEN_MARKED = math.Clamp(MOAT_CRATE_OPEN_MARKED - 1, 0, 1000)
+                        else
+                            m_Inventory[num].mass_open = true
+                            MOAT_CRATE_OPEN_MARKED = math.Clamp(MOAT_CRATE_OPEN_MARKED + 1, 0, 1000)
+                            m_DrawMassOpenButton(MOAT_INV_BG)
+                        end
+                    elseif(MOAT_CRATE_OPEN_MARKED <= 0) then
+                        if (m_Inventory[num].decon) then
+                            m_Inventory[num].decon = false
+                            MOAT_ITEMS_DECON_MARKED = math.Clamp(MOAT_ITEMS_DECON_MARKED - 1, 0, 1000)
+                        else
+                            m_Inventory[num].decon = true
+                            MOAT_ITEMS_DECON_MARKED = math.Clamp(MOAT_ITEMS_DECON_MARKED + 1, 0, 1000)
+                            m_DrawDeconButton(MOAT_INV_BG)
+                        end
+                    end
 
 					if (input.IsKeyDown(KEY_LSHIFT)) then
 						if (MOAT_DECONSTRUCT_ITEMS_START ~= 0) then
@@ -6665,6 +6688,119 @@ net.Receive("MOAT_NET_SPAWN", function()
 
     timer.Simple(5, function() MOAT_NOT_SPAWNING = true end)
 end)
+
+function m_DrawMassOpenButton()
+    if (IsValid(MOAT_INV_MASS_OPEN)) then return end
+    MOAT_INV_BG:SetSize(MOAT_INV_BG_W, MOAT_INV_BG_H + 40)
+
+    MOAT_INV_MASS_OPEN = vgui.Create("DButton", MOAT_INV_BG)
+    MOAT_INV_MASS_OPEN:SetPos(MOAT_INV_BG_W - 364 - 5, MOAT_INV_BG_H)
+    MOAT_INV_MASS_OPEN:SetSize(364, 35)
+    MOAT_INV_MASS_OPEN:SetText("")
+    sfx.SoundEffects(MOAT_INV_MASS_OPEN)
+    local hover_coloral = 1
+    MOAT_INV_MASS_OPEN.Paint = function(s, w, h)
+        surface_SetDrawColor(0, 0, 0, 255)
+        surface_DrawRect(0, 0, w, h)
+        surface_SetDrawColor(50, 50, 50, 100)
+        surface_DrawOutlinedRect(0, 0, w, h)
+        surface_SetDrawColor(0, 255, 0, 20 + hover_coloral / 5)
+        surface_DrawRect(1, 1, w - 2, h - 2)
+        surface_SetDrawColor(0, 0, 255, 20 + hover_coloral / 5)
+        surface_SetMaterial(gradient_d)
+        surface_DrawTexturedRect(1, 1, w - 2, h - 2)
+        local the_s = ""
+        if (MOAT_CRATE_OPEN_MARKED > 1) then
+            the_s = "s"
+        end
+        m_DrawShadowedText(1, "Open " .. MOAT_CRATE_OPEN_MARKED .. " Marked Crate" .. the_s, "Trebuchet24", w / 2, h / 2, Color(255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+    end
+
+    local btn_hovered = 1
+    local btn_color_a = false
+
+    MOAT_INV_MASS_OPEN.Think = function(s)
+        if (MOAT_CRATE_OPEN_MARKED < 1) then
+            s:Remove()
+            MOAT_INV_BG:SetSize(MOAT_INV_BG_W, MOAT_INV_BG_H)
+
+            return
+        end
+
+        if (not s:IsHovered()) then
+            btn_hovered = 0
+            btn_color_a = false
+
+            if (hover_coloral > 0) then
+                hover_coloral = Lerp(2 * FrameTime(), hover_coloral, 0)
+            end
+        else
+            if (hover_coloral < 154 and btn_hovered == 0) then
+                hover_coloral = Lerp(5 * FrameTime(), hover_coloral, 155)
+            else
+                btn_hovered = 1
+            end
+
+            if (btn_hovered == 1) then
+                if (btn_color_a) then
+                    if (hover_coloral >= 154) then
+                        btn_color_a = false
+                    else
+                        hover_coloral = hover_coloral + (100 * FrameTime())
+                    end
+                else
+                    if (hover_coloral <= 50) then
+                        btn_color_a = true
+                    else
+                        hover_coloral = hover_coloral - (100 * FrameTime())
+                    end
+                end
+            end
+        end
+    end
+
+    MOAT_INV_MASS_OPEN.DoClick = function()
+		local crates_open = 0
+
+        for i = 1, #m_Inventory do
+            if (m_Inventory[i] and m_Inventory[i].mass_open) then
+                crates_open = crates_open + 1
+            end
+        end
+
+		//net.Start "MOAT_MASS_OPEN_CRATES"
+		//net.WriteUInt(crates_open, 16)
+
+		local items_sent = 0
+        local items = {}
+        for i = 1, #m_Inventory do
+            if (m_Inventory[i] and m_Inventory[i].mass_open) then
+				items_sent = items_sent + 1
+
+                //m_OpenCrate(m_Inventory[i], true, true)
+                //coroutine.wait(0.5)
+                table.insert(items, m_Inventory[i])
+
+                //net.WriteDouble(i)
+                //net.WriteDouble(m_Inventory[i].c)
+
+                if (items_sent == MOAT_CRATE_OPEN_MARKED) then
+                    //net.WriteDouble(2)
+                else
+                    //net.WriteDouble(3)
+                end
+
+                m_Inventory[i].mass_open = false
+            end
+        end
+
+        m_MassOpenCrates(items, items_sent)
+
+		//net.SendToServer()
+
+        MOAT_CRATE_OPEN_MARKED = 0
+    end
+end
 
 function m_DrawDeconButton()
     if (IsValid(MOAT_INV_MASS_DECON)) then return end

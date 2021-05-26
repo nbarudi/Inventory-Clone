@@ -1,6 +1,19 @@
 
 crate_wait = CurTime()
 
+function m_MassOpenCrates(tbl, num_crates)
+    if(num_crates <= 0) then return end
+    print(num_crates .. " Remaining!")
+    item_tbl = tbl[1]
+    if (not item_tbl or not item_tbl.c) then return end
+    net.Start("MOAT_VERIFY_CRATE")
+    net.WriteDouble(tonumber(item_tbl.c))
+    net.WriteBool(true)
+    net.SendToServer()
+    table.remove(tbl, 1)
+    m_MassOpenCrates(tbl, num_crates - 1)
+end
+
 function m_OpenCrate(tbl, fastopen)
     if (crate_wait > CurTime()) then 
         chat.AddText(Color(255, 0, 0), "Please wait " .. math.Round(CurTime() - crate_wait) .. " sec(s) before opening another crate!")

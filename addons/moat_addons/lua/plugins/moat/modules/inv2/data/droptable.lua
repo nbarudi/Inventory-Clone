@@ -35460,7 +35460,7 @@ ITEM.ID = 6434
 ITEM.Name = "Snipers Springfield"
 ITEM.Rarity = 6
 ITEM.Collection = "Gritsky Collection"
-ITEM.WeaponClass = "weapon_ttt_mp5k"
+ITEM.WeaponClass = "weapon_ttt_m03a3"
 ITEM.MinStats = 7
 ITEM.MaxStats = 7
 ITEM.Stats = {
@@ -35474,7 +35474,7 @@ ITEM.Stats = {
 }
 ITEM.MinTalents = 3
 ITEM.MaxTalents = 3
-ITEM.Talents = {"Close Quarters", "random", "random"}
+ITEM.Talents = {"Center Mass", "random", "random"}
 m_AddDroppableItem(ITEM, 'Unique')
 
 ITEM = {}
@@ -35676,11 +35676,11 @@ ITEM.ID = 6425
 ITEM.Name = "Gritsky Crate"
 ITEM.Description = "This crate contains an item from the Gritsky Collection! Right click to open"
 ITEM.Image = "https://media.discordapp.net/attachments/845762236651798549/846537045652144148/4231881996.png"
-ITEM.Rarity = 2
+ITEM.Rarity = 3
 ITEM.Collection = "Gritsky Collection"
 ITEM.Active = true 
 ITEM.Stackable = true 
-ITEM.Price = 250
+ITEM.Price = 500
 m_AddDroppableItem(ITEM, "Crate")
 
 /*
@@ -35708,8 +35708,9 @@ ITEM.ID = 6443
 ITEM.Description = "Using this item allows you to re-roll the type of weapon while keeping the talents."
 ITEM.Rarity = 8
 ITEM.Active = true
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
-ITEM.Price = 90000
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/weapon_mutator64.png"
+ITEM.Price = 110000
+ITEM.NewItem = 1627790400
 ITEM.Collection = "Gamma Collection"
 ITEM.NotDroppable = true
 ITEM.ItemCheck = 9
@@ -35726,8 +35727,9 @@ ITEM.Description = "Using this item allows you to change the rarity of a weapon"
 ITEM.Rarity = 9
 ITEM.Active = true
 ITEM.NotDroppable = true
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/rarity_mutator64.png"
 ITEM.Price = 150000
+ITEM.NewItem = 1627790400
 ITEM.Collection = "Gamma Collection"
 ITEM.ItemCheck = 9
 ITEM.ItemUsed = function(pl, slot, item)
@@ -35924,7 +35926,7 @@ ITEM.Description = "Using this item allows you to max out the level of your weap
 ITEM.Rarity = 8
 ITEM.Active = false
 ITEM.NotDroppable = true
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+ITEM.Image = "https://gritskygaming.net/public/ttt/misc/level_mutator64.png"
 ITEM.Price = 150000
 ITEM.Collection = "Gamma Collection"
 ITEM.ItemCheck = 9
