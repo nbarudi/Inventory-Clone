@@ -1,5 +1,5 @@
 # Gritsky TTT
- gwitsky ttt
+gwitsky ttt
 
  current developers
     chad
