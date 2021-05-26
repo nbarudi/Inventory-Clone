@@ -3,15 +3,14 @@ crate_wait = CurTime()
 
 function m_MassOpenCrates(tbl, num_crates)
     if(num_crates <= 0) then return end
-    print(num_crates .. " Remaining!")
-    item_tbl = tbl[1]
-    if (not item_tbl or not item_tbl.c) then return end
-    net.Start("MOAT_VERIFY_CRATE")
-    net.WriteDouble(tonumber(item_tbl.c))
-    net.WriteBool(true)
-    net.SendToServer()
-    table.remove(tbl, 1)
-    m_MassOpenCrates(tbl, num_crates - 1)
+    for i,item_tbl in pairs(tbl) do
+        if (not item_tbl or not item_tbl.c) then return end
+        net.Start("MOAT_VERIFY_CRATE")
+        net.WriteDouble(tonumber(item_tbl.c))
+        net.WriteBool(true)
+        net.SendToServer()
+    end
+    
 end
 
 function m_OpenCrate(tbl, fastopen)
