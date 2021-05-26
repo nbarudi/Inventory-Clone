@@ -35713,7 +35713,7 @@ ITEM.Price = 110000
 ITEM.NewItem = 1627790400
 ITEM.Collection = "Gamma Collection"
 ITEM.NotDroppable = true
-ITEM.ItemCheck = 9
+ITEM.ItemCheck = 15
 ITEM.ItemUsed = function(pl, slot, item)
 	m_MutateWeapon(pl, slot, item)
 	m_SendInvItem(pl, slot)
@@ -35731,7 +35731,7 @@ ITEM.Image = "https://gritskygaming.net/public/ttt/misc/rarity_mutator64.png"
 ITEM.Price = 150000
 ITEM.NewItem = 1627790400
 ITEM.Collection = "Gamma Collection"
-ITEM.ItemCheck = 9
+ITEM.ItemCheck = 15
 ITEM.ItemUsed = function(pl, slot, item)
 	m_MutateRarity(pl, slot, item)
 	m_SendInvItem(pl, slot)

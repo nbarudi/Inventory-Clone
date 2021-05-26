@@ -115,6 +115,12 @@ end, "You can't wrap gift packages, sorry."}
 MOAT_ITEM_CHECK[14] = {function(i)
 	return i.p3 ~= nil
 end, "Item must have a skin!"}
+MOAT_ITEM_CHECK[15] = {function(i)
+	if(i.item.Kind == "Unique" or i.item.Kind == "Melee" or not (i.Stats or (i.item and i.item.Stats))) then
+		return false
+	end
+	return true
+end, "Cannot be used on Unique or Melee weapons"}
 
 MODELS_COLORABLE = {
 ['models/burd/norpo/arkhamorigins/assassins/deathstroke_valvebiped.mdl']=true,
