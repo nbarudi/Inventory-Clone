@@ -1,4 +1,6 @@
 # Gritsky TTT
- gwitsky ttt O_O
+ gwitsky ttt
 
-lorem ipsum
+ current developers
+    chad
+    bungo
