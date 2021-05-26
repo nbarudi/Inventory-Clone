@@ -88,6 +88,7 @@ local group_images = {
    	["moderator"] = "icon16/shield_add.png",
    	["admin"] = "icon16/lightning.png",
    	["senioradmin"] = "icon16/lightning_add.png",
+   	["developer"] = "icon16/application_xp_terminal.png",
    	["headadmin"] = "icon16/world.png",
    	["communitylead"] = "icon16/application_xp_terminal.png",
 	["owner"] = "icon16/application_xp_terminal.png",

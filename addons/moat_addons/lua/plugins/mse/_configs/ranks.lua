@@ -18,6 +18,11 @@ MSE.Ranks.Register "senioradmin"
 	:Cooldown "1440"
 	:Pretty "Senior Administrator"
 
+MSE.Ranks.Register "developer"
+	:AmountUntilCooldown "4"
+	:Cooldown "1440"
+	:Pretty "Developer"
+
 MSE.Ranks.Register "headadmin"
 	:AmountUntilCooldown "4"
 	:Cooldown "1440"

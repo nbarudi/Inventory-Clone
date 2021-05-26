@@ -58,8 +58,15 @@ moat.Ranks.Register(8, "senioradmin", "Senior Administrator")
 	:SetIcon "icon16/wand.png"
 	:SetFlags "+TMAS"
 
-moat.Ranks.Register(9, "headadmin", "Head Administrator")
+moat.Ranks.Register(8, "developer", "Developer")
 	:SetWeight(80)
+	:ForumSync(12)
+	:SetColor {0, 188, 212}
+	:SetIcon "icon16/application_osx_terminal.png"
+	:SetFlags "+TMAS"
+
+moat.Ranks.Register(9, "headadmin", "Head Administrator")
+	:SetWeight(85)
 	:ForumSync(13)
 	:SetColor {255, 51, 148}
 	:SetIcon "icon16/wand.png"

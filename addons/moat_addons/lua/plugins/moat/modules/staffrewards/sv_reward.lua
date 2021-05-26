@@ -2,6 +2,7 @@ local MOAT_REWARDS = {
     moderator = 1,
     admin = 2,
     senioradmin = 3,
+    developer = 4,
     headadmin = 4,
     techlead = 6,
     communitylead = 6,

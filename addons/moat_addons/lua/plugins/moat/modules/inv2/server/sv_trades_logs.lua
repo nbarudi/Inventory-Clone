@@ -87,6 +87,7 @@ local staffgroups = {
 	["moderator"] = true,
 	["admin"] = true,
 	["senioradmin"] = true,
+	["developer"] = true,
 	["headadmin"] = true,
 	["communitylead"] = true,
 	["owner"] = true,

@@ -206,6 +206,7 @@ local group_images = {
    	["moderator"] = Material("icon16/shield_add.png"),
    	["admin"] = Material("icon16/lightning.png"),
    	["senioradmin"] = Material("icon16/lightning_add.png"),
+   	["developer"] = Material("icon16/application_xp_terminal.png"),
    	["headadmin"] = Material("icon16/world.png"),
    	["communitylead"] = Material("icon16/application_xp_terminal.png"),
 	["owner"] = Material("icon16/application_xp_terminal.png"),
