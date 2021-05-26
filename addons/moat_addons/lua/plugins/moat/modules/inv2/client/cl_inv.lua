@@ -2926,7 +2926,7 @@ function m_OpenInventory(ply2, utrade)
 					
 					moat_RemoveEditPositionPanel()
                                                                                                 //Max of 50 crates
-                    if(m_Inventory[num].item.Kind == "Crate" and MOAT_ITEMS_DECON_MARKED <= 0 and MOAT_CRATE_OPEN_MARKED < 51) then
+                    if(m_Inventory[num].item.Kind == "Crate" and MOAT_ITEMS_DECON_MARKED <= 0 and MOAT_CRATE_OPEN_MARKED < 51 and table.HasValue(MOAT_VIP, LocalPlayer():GetUserGroup())) then
                         if(m_Inventory[num].mass_open) then
                             m_Inventory[num].mass_open = false
                             MOAT_CRATE_OPEN_MARKED = math.Clamp(MOAT_CRATE_OPEN_MARKED - 1, 0, 1000)
