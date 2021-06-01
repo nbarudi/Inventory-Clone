@@ -466,10 +466,10 @@ function bp_sql()
         if not auth(ply) then return end
         if xp < 0 then return end
         print("EARNED XP",MG_cur_event,xp)
-        if MG_cur_event == "Quadra XP" then 
-            xp = xp
+        if MG_cur_event == "+300% XP" then 
+            xp = xp/4
         end
-        xp = xp * 2
+        //xp = xp * 2
         print("XP TO PROCESS",xp)
         bp_processxp(ply,xp)
     end)

@@ -3676,3 +3676,24 @@ function TALENT:OnPlayerHit(victim, attacker, dmginfo, talent_mods)
 	end
 end
 m_AddTalent(TALENT)
+
+TALENT = {}
+TALENT.ID = 43
+TALENT.Name = "Quick Draw"
+TALENT.NameColor = Color(255, 101, 11)
+TALENT.Description = "Weapon is drawn %s_ faster"
+TALENT.Tier = 1
+TALENT.LevelRequired = { min = 5, max = 10 }
+
+TALENT.Modifications = {}
+TALENT.Modifications[1] = {min = 25, max = 50}
+
+TALENT.Melee = true
+TALENT.NotUnique = true
+
+function TALENT:ModifyWeapon( weapon, talent_mods )
+	local Mod = self.Modifications[1]
+	local mult = Mod.min + (Mod.max - Mod.min) * math.min(1, talent_mods[1])
+	weapon:SetDeployrate(mult)
+end
+m_AddTalent(TALENT)

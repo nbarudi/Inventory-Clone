@@ -1755,7 +1755,7 @@ ITEM.Active = true
 ITEM.Stackable = true
 
 ITEM.Price = 28450
-ITEM.LimitedShop = 1594882800
+ITEM.LimitedShop = 1625155199
 ITEM.Rewardable = true
 m_AddDroppableItem(ITEM, 'Crate')
 
@@ -11214,7 +11214,7 @@ ITEM.ID = 10108
 ITEM.Name = "Joule Newell"
 ITEM.Rarity = 9
 ITEM.Collection = "Aqua Palm Collection"
-ITEM.WeaponClass = "weapon_ttt_mp40"
+ITEM.WeaponClass = "weapon_ttt_te_sterlings"
 ITEM.MinStats = 8
 ITEM.MaxStats = 9
 ITEM.NameEffect = "electric"
@@ -35679,6 +35679,7 @@ ITEM.Image = "https://media.discordapp.net/attachments/845762236651798549/846537
 ITEM.Rarity = 3
 ITEM.Collection = "Gritsky Collection"
 ITEM.Active = true 
+ITEM.NewItem = 1627790400
 ITEM.Stackable = true 
 ITEM.Price = 500
 m_AddDroppableItem(ITEM, "Crate")
@@ -35934,4 +35935,583 @@ ITEM.ItemUsed = function(pl, slot, item)
 	m_MutateLevel(pl, slot, item)
 	m_SendInvItem(pl, slot)
 end
+
 m_AddDroppableItem(ITEM, "Usable")
+
+
+
+//New Battlepass Items
+ITEM = {}
+ITEM.ID = 6454
+ITEM.Name = "June"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6455
+ITEM.Name = "Grape"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 2
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "Grapes", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6456
+ITEM.Name = "Funny"
+ITEM.Rarity = 4
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 10, max = 15 },
+	Accuracy = { min = 10, max = 15 },
+	Kick = { min = -10, max = -15 },
+	Firerate = { min = 10, max = 15 },
+	Magazine = { min = 10, max = 15 },
+	Range = { min = 10, max = 15 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "Butterfingers"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6457
+ITEM.Name = "Windy"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "Dragonborn"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6458
+ITEM.Name = "Flame"
+ITEM.Rarity = 8
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 28 },
+	Accuracy = { min = 14, max = 28 },
+	Kick = { min = -14, max = -28 },
+	Firerate = { min = 14, max = 28 },
+	Magazine = { min = 14, max = 28 },
+	Range = { min = 14, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "Inferno"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6459
+ITEM.Name = "Beach Bod"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Lightweight", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6460
+ITEM.Name = "Tropic"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6461
+ITEM.Name = "Hot Tub"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "Ice Cream", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6462
+ITEM.Name = "Style"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 2
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6463
+ITEM.Name = "Spa"
+ITEM.Rarity = 4
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 4
+ITEM.MaxStats = 6
+ITEM.Stats = {
+	Damage = { min = 10, max = 15 },
+	Accuracy = { min = 10, max = 15 },
+	Kick = { min = -10, max = -15 },
+	Firerate = { min = 10, max = 15 },
+	Magazine = { min = 10, max = 15 },
+	Range = { min = 10, max = 15 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 2
+ITEM.MinTalents = 2
+ITEM.Talents = {"random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6464
+ITEM.Name = "Cloudy"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 2
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6465
+ITEM.Name = "Slightly Crazy"
+ITEM.Rarity = 8
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 28 },
+	Accuracy = { min = 14, max = 28 },
+	Kick = { min = -14, max = -28 },
+	Firerate = { min = 14, max = 28 },
+	Magazine = { min = 14, max = 28 },
+	Range = { min = 14, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Wildcard: Tier 1", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6466
+ITEM.Name = "Cheating"
+ITEM.Rarity = 8
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 28 },
+	Accuracy = { min = 14, max = 28 },
+	Kick = { min = -14, max = -28 },
+	Firerate = { min = 14, max = 28 },
+	Magazine = { min = 14, max = 28 },
+	Range = { min = 14, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Copycat", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6467
+ITEM.Name = "July"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6468
+ITEM.Name = "Crazy"
+ITEM.Rarity = 8
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 28 },
+	Accuracy = { min = 14, max = 28 },
+	Kick = { min = -14, max = -28 },
+	Firerate = { min = 14, max = 28 },
+	Magazine = { min = 14, max = 28 },
+	Range = { min = 14, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Wildcard: Tier 1", "Wildcard: Tier 2", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6469
+ITEM.Name = "Augest"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6470
+ITEM.Name = "Super Crazy"
+ITEM.Rarity = 8
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 28 },
+	Accuracy = { min = 14, max = 28 },
+	Kick = { min = -14, max = -28 },
+	Firerate = { min = 14, max = 28 },
+	Magazine = { min = 14, max = 28 },
+	Range = { min = 14, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Wildcard: Tier 1", "Wildcard: Tier 2", "Wildcard: Tier 3"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6471
+ITEM.Name = "Boom"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "Explosive", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+
+ITEM = {}
+ITEM.ID = 6472
+ITEM.Name = "September"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+
+ITEM = {}
+ITEM.ID = 6473
+ITEM.Name = "Energizing MSBS"
+ITEM.WeaponClass = "weapon_ttt_msbs"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Energizing", "random", "random"}
+m_AddDroppableItem(ITEM, "Unique")
+
+ITEM = {}
+ITEM.ID = 6474
+ITEM.Name = "Indoors"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 2
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6475
+ITEM.Name = "Outdoors"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 5
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 2
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6476
+ITEM.Name = "Tourist"
+ITEM.Rarity = 8
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 28 },
+	Accuracy = { min = 14, max = 28 },
+	Kick = { min = -14, max = -28 },
+	Firerate = { min = 14, max = 28 },
+	Magazine = { min = 14, max = 28 },
+	Range = { min = 14, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+ITEM = {}
+ITEM.ID = 6477
+ITEM.Name = "Pew Pew Pistol"
+ITEM.WeaponClass = "weapon_zm_pistol"
+ITEM.Rarity = 5
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 19 },
+	Accuracy = { min = 14, max = 19 },
+	Kick = { min = -14, max = -19 },
+	Firerate = { min = 14, max = 19 },
+	Magazine = { min = 14, max = 19 },
+	Range = { min = 14, max = 19 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Energizing", "random", "random"}
+m_AddDroppableItem(ITEM, "Unique")
+
+ITEM = {}
+ITEM.ID = 6478
+ITEM.Name = "Matter Splatter"
+ITEM.WeaponClass = "weapon_ttt_aug"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"Paintball", "random", "random"}
+m_AddDroppableItem(ITEM, "Unique")
+
+ITEM = {}
+ITEM.ID = 6479
+ITEM.Name = "Chilling"
+ITEM.Rarity = 6
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 6
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 14, max = 23 },
+	Accuracy = { min = 14, max = 23 },
+	Kick = { min = -14, max = -23 },
+	Firerate = { min = 14, max = 23 },
+	Magazine = { min = 19, max = 28 },
+	Range = { min = 19, max = 28 },
+	Weight = { min = -4, max = -7 }
+}
+ITEM.MaxTalents = 3
+ITEM.MinTalents = 3
+ITEM.Talents = {"random", "Ice Cream", "random"}
+m_AddDroppableItem(ITEM, "tier")
+
+
+ITEM = {}
+ITEM.ID = 6480
+ITEM.Name = "BBQ and"
+ITEM.Rarity = 7
+ITEM.Collection = "Summer Climb Collection"
+ITEM.MinStats = 7
+ITEM.MaxStats = 7
+ITEM.Stats = {
+	Damage = { min = 17, max = 28 },
+	Accuracy = { min = 17, max = 28 },
+	Kick = { min = -17, max = -28 },
+	Firerate = { min = 17, max = 28 },
+	Magazine = { min = 23, max = 33 },
+	Range = { min = 23, max = 33 },
+	Weight = { min = -5, max = -7 }
+}
+ITEM.MinTalents = 3
+ITEM.MaxTalents = 3
+ITEM.Talents = {"random", "random", "random"}
+m_AddDroppableItem(ITEM, "tier")
+m_AddDroppableItem(ITEM, "Usable")
+

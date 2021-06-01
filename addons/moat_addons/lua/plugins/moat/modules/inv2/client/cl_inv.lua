@@ -1260,8 +1260,8 @@ M_INV_SLOT = M_INV_SLOT or {}
 M_LOAD_SLOT = M_LOAD_SLOT or {}
 M_TRADE_SLOT = M_TRADE_SLOT or {}
 -- {{"Loadout", 90}, {"Shop", 90}, {"Trading", 90}, {"Gamble", 90}, {"Dailies", 90}, {"Settings", 90}, {"Event", 90}, {"Store", 90}}
-local catw = math.floor(MOAT_INV_BG_W/9)
-MOAT_INV_CATS = {{"Loadout", catw}, {"Player", catw}, {"Trading", catw}, {"Shop", catw}, {"Gamble", catw}, {"Dailies", catw}, {"Settings", catw}, {"Event", catw}, {"Store", catw}}--{"Dailies", catw}, {"Settings", catw}, {"Event", catw}, {"Store", catw}}
+local catw = math.floor(MOAT_INV_BG_W/10)
+MOAT_INV_CATS = {{"Loadout", catw}, {"Player", catw}, {"Trading", catw}, {"Shop", catw}, {"Gamble", catw}, {"Dailies", catw}, {"Settings", catw}, {"Event", catw}, {"Battlepass", catw}, {"Store", catw}}--{"Dailies", catw}, {"Settings", catw}, {"Event", catw}, {"Store", catw}}
 function m_PaintVBar(sbar)
 
     local MT = MOAT_THEME.Themes
@@ -2926,7 +2926,9 @@ function m_OpenInventory(ply2, utrade)
 					
 					moat_RemoveEditPositionPanel()
                                                                                                 //Max of 50 crates
-                    if(m_Inventory[num].item.Kind == "Crate" and MOAT_ITEMS_DECON_MARKED <= 0 and MOAT_CRATE_OPEN_MARKED < 51 and table.HasValue(MOAT_VIP, LocalPlayer():GetUserGroup())) then
+                                                                                                //and table.HasValue(MOAT_VIP, LocalPlayer():GetUserGroup())
+                    if(m_Inventory[num].item.Kind == "Crate" and MOAT_ITEMS_DECON_MARKED <= 0 and MOAT_CRATE_OPEN_MARKED < 51) then
+
                         if(m_Inventory[num].mass_open) then
                             m_Inventory[num].mass_open = false
                             MOAT_CRATE_OPEN_MARKED = math.Clamp(MOAT_CRATE_OPEN_MARKED - 1, 0, 1000)
@@ -3290,12 +3292,12 @@ function m_OpenInventory(ply2, utrade)
             MOAT_GAMBLE_BG:AlphaTo(0, anim_time, 0, callback)
         end
 
-        -- if (cat == 5) then
-        --     local x, y = MOAT_INV_BG:GetPos()
-        --     m_CreateBattlePanel(x + 5, y + 30, MOAT_INV_BG_W - 10, MOAT_INV_BG_H - 35)
-        -- else
-        --     m_RemoveBattlePanel()
-        -- end
+         if (cat == 9) then
+             local x, y = MOAT_INV_BG:GetPos()
+             m_CreateBattlePanel(x + 5, y + 30, MOAT_INV_BG_W - 10, MOAT_INV_BG_H - 35)
+         else
+             m_RemoveBattlePanel()
+         end
 
 		if (cat == 6) then --6
 			m_BountyPanel()

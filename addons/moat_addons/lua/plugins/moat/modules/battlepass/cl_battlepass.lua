@@ -63,16 +63,33 @@ local function GetDroppableWeapons()
     return droppable_cache, droppable_cache_count
 end
 
+local crates = {
+    "https://gritskygaming.net/public/ttt/misc/alpha_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/beta_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/cosmetic_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/paper_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/crimson_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/effect_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/fiftyfifty_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/hype_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/melee_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/model_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/paint_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/spring_crate64.png",
+    "https://gritskygaming.net/public/ttt/misc/titan_crate64.png",
+}
+
 function make_randompanel(model,ITEM_BG)
     local m_WClass = {} 
     if weapons.Get(model) then
         m_WClass = weapons.Get(model)
     elseif (model == "tier") then
         m_WClass = table.Random(GetDroppableWeapons()).WeaponTable
+    elseif (model == "crates") then
+        m_WClass.WorldModel = table.Random(crates)
     else
         m_WClass.WorldModel = model
     end
-    
 
     local m_DPanelIcon = {}
     m_DPanelIcon.SIcon = vgui.Create("MoatModelIcon", ITEM_BG)
@@ -282,6 +299,45 @@ end
 function remove_about()
     BP_ABOUT:Remove()
 end
+
+local function m_GetRandomTalent(talent_lvl, talent_name, talent_melee)
+    local talent_tbl = {}
+    local moat_fourth_talent = false
+
+    if (talent_lvl > 3) then
+        talent_lvl = 3
+        moat_fourth_talent = true
+    end
+
+
+    if (talent_name ~= "random") then
+        for k, v in pairs(MOAT_TALENTS) do
+            if (talent_name == v.Name) then
+                talent_tbl = table.Copy(v)
+                break
+            end
+        end
+    else
+        for k, v in RandomPairs(MOAT_TALENTS) do
+            if (talent_lvl == v.Tier and v.NotUnique) then
+				if (talent_melee and not v.Melee) then continue end
+                talent_tbl = table.Copy(v)
+                break
+            end
+        end
+    end
+
+    if (moat_fourth_talent) then
+        talent_tbl.LevelRequired = {min = 40, max = 50}
+    end
+
+	if (not talent_tbl.Tier) then
+		talent_tbl.Tier = 5
+	end
+
+    return talent_tbl
+end
+
 BPMODEL_PANELS = {}
 function make_battlepass()
     cookie.Set("SeenBP1",1)
@@ -941,8 +997,100 @@ function remove_battlepass()
     M_BP:Remove()
 end
 
+local added_examples = false
+
 function m_CreateBattlePanel(pnl_x, pnl_y, pnl_w, pnl_h)
     if IsValid(M_BATTLE_PNL) then return end
+
+    for tier,details in pairs(MOAT_BP.tiers) do
+        if(added_examples) then break end
+        local ID = details.ID
+        local kind = details.model
+        print(details.name.. " | " .. kind)
+        local det = GetItemFromEnum(ID)
+        if(not (kind == "tier" or string.find(kind, "weapon"))) then continue end
+        if(det == nil || det.Stats == nil) then continue end
+        local item = {}
+        item.u = ID
+        item.s = {}
+        item.Talents = {}
+        local stats_to_apply = 0
+        if(det.MinStats and det.MaxStats) then
+            stats_to_apply = math.random(det.MinStats, det.MaxStats)
+        end
+        local stats_chosen = 0
+        for k,v in RandomPairs(det.Stats) do
+            if (tostring(k) == "Damage") then
+                item.s.d = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Accuracy") then
+                item.s.a = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Kick") then
+                item.s.k = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Firerate") then
+                item.s.f = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Magazine") then
+                item.s.m = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Range") then
+                item.s.r = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Weight") then
+                item.s.w = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Reloadrate") then
+                item.s.y = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Deployrate") then
+                item.s.z = math.Round(math.Rand(0, 1), 3)
+            elseif (tostring(k) == "Chargerate") then
+                item.s.c = math.Round(math.Rand(0, 1), 3)
+            end
+            if (stats_to_apply > 0) then
+                stats_chosen = stats_chosen + 1
+                if (stats_chosen >= stats_to_apply) then break end
+            end
+        end
+        for k, v in RandomPairs(weapons.GetList()) do
+            if (v.AutoSpawnable and v.Base == "weapon_tttbase") then
+                item.w = v.ClassName
+                break 
+            end
+        end
+        if(det.MinTalents and det.MaxTalents and det.Talents) then
+            item.s.l = 1
+            item.s.x = 0
+            item.t = {}
+            local talents_chosen = {}
+            local talents_to_loop = det.Talents
+
+            for k, v in ipairs(talents_to_loop) do
+                talents_chosen[k] = m_GetRandomTalent(k, v, false)
+            end
+
+            for i = 1, table.Count(talents_chosen) do
+                local talent_tbl = talents_chosen[i]
+                item.t[i] = {}
+                item.t[i].e = talent_tbl.ID
+                item.t[i].l = math.random(talent_tbl.LevelRequired and talent_tbl.LevelRequired.min or (talent_tbl.Tier * 10), talent_tbl.LevelRequired and talent_tbl.LevelRequired.max or (talent_tbl.Tier * 20))
+                item.t[i].m = {}
+                local det_tbl = {}
+                det_tbl.Description = talent_tbl.Description
+                det_tbl.ID = talent_tbl.ID
+                det_tbl.Melee = talent_tbl.Melee
+                det_tbl.Name = talent_tbl.Name
+                det_tbl.NotUnique = talent_tbl.NotUnique
+                det_tbl.Tier = talent_tbl.Tier
+                det_tbl.LevelRequired = talent_tbl.LevelRequired
+                det_tbl.Modifications = talent_tbl.Modifications
+                det_tbl.NameColor = talent_tbl.NameColor
+                table.insert(item.Talents, det_tbl)
+                if(not talent_tbl.Modifications) then continue end
+                for k, v in ipairs(talent_tbl.Modifications) do
+                    item.t[i].m[k] = math.Round(math.Rand(0, 1), 2)
+                end
+            end
+        end
+        item.c = os.time() + SysTime()
+        item.item = det
+        MOAT_BP.Examples[ID] = item
+    end
+    added_examples = true
     MOAT_BP.Open = true
 	MOAT_BP.CurCat = 1
 	MOAT_BP.TitlePoly = {
