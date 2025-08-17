@@ -191,7 +191,7 @@ function MOAT_EVENT.ChallengeComplete()
 
     chat.AddText(Material("icon16/medal_gold_3.png"), Color(255, 0, 0), "Event ", Color(0, 255, 255), "| ", Color(255, 255, 0), wpn_str .. " " .. MOAT_EVENT.prefixes[id] .. " objective completed!")
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/drops/level_up.wav")
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/drops/level_up.wav")
 end
 
 net.Receive("moat.events.complete", MOAT_EVENT.ChallengeComplete)

@@ -3,7 +3,7 @@ ITEM.ID = 19912
 ITEM.Name = "Oldies Crate"
 ITEM.NameEffect = "glow"
 ITEM.Description = "This crate contains an item from the Oldies Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/crates/box_legend.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/crates/box_legend.png"
 ITEM.Rarity = 4
 ITEM.Collection = "Oldies Collection"
 ITEM.Active = false
@@ -184,7 +184,7 @@ ITEM.ID = 207
 
 ITEM.Name = "A Baton"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_baton.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_baton.png" 
 
 ITEM.WeaponClass = "weapon_ttt_baton"
 
@@ -226,7 +226,7 @@ ITEM.ID = 2007
 
 ITEM.Name = "American Baton"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_baton.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_baton.png" 
 
 ITEM.WeaponClass = "weapon_ttt_baton"
 
@@ -330,7 +330,7 @@ ITEM.ID = 208
 
 ITEM.Name = "A Chair"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_chair.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_chair.png" 
 
 ITEM.WeaponClass = "weapon_ttt_chair"
 
@@ -514,7 +514,7 @@ ITEM.WeaponClass = "weapon_ttt_fists"
 
 ITEM.Rarity = 3
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_fists.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_fists.png"
 
 ITEM.Collection = "Spring Collection"
 
@@ -1130,7 +1130,7 @@ ITEM.NameColor = Color( 255, 102, 0 )
 
 ITEM.Description = "Begin the round with +%s_ more ammo in your reserves"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/smithammoicon.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/smithammoicon.png" 
 
 ITEM.Rarity = 4
 
@@ -1165,7 +1165,7 @@ ITEM.NameColor = Color( 139, 0, 166 )
 
 ITEM.Description = "Fall damage is reduced by %s_ when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/smithfallicon.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/smithfallicon.png" 
 
 ITEM.Rarity = 2
 
@@ -1200,7 +1200,7 @@ ITEM.NameColor = Color( 255, 255, 0 )
 
 ITEM.Description = "Start with %s extra credits as a detective/traitor when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/cred_powerup64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/cred_powerup64.png"
 
 ITEM.Rarity = 4
 
@@ -1232,7 +1232,7 @@ ITEM.NameColor = Color( 255, 60, 0 )
 
 ITEM.Description = "Fire and explosion damage is reduced by %s_ when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/flame_powerup64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/flame_powerup64.png" 
 
 ITEM.Rarity = 3
 
@@ -1267,7 +1267,7 @@ ITEM.NameColor = Color( 255, 0, 0 )
 
 ITEM.Description = "Froghoppers can jump 70 times their body height. Too bad this only allows you to jump +%s_ higher"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/jumpboost64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/jumpboost64.png" 
 
 ITEM.Rarity = 2
 
@@ -1298,7 +1298,7 @@ ITEM.NameColor = Color(0, 255, 255)
 
 ITEM.Description = "Headshot damage is reduced by %s_ when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/hardhat_powerup64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/hardhat_powerup64.png" 
 
 ITEM.Rarity = 6
 
@@ -1326,7 +1326,7 @@ ITEM.NameColor = Color( 0, 204, 0 )
 
 ITEM.Description = "Health is increased by +%s when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/smithhealicon.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/smithhealicon.png"
 
 ITEM.Rarity = 4
 
@@ -1365,7 +1365,7 @@ ITEM.NameColor = Color( 85, 85, 255 )
 
 ITEM.Description = "Movement speed is increased by +%s_ when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/smithrunicon.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/smithrunicon.png" 
 
 ITEM.Rarity = 3
 
@@ -1402,7 +1402,7 @@ ITEM.NameColor = Color( 255, 0, 255 )
 
 ITEM.Description = "Gain %s_ more weapon XP after a rightfull kill when using this power-up"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/xp_powerup64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/xp_powerup64.png" 
 
 ITEM.Rarity = 5
 
@@ -1431,7 +1431,7 @@ ITEM.Name = "Alpha Crate"
 
 ITEM.Description = "This crate contains an item from the Alpha Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/alpha_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/alpha_crate64.png"
 
 ITEM.Rarity = 2
 
@@ -1452,7 +1452,7 @@ ITEM.Name = "Lust Crate"
 
 ITEM.Description = "This crate contains an item from the Lust Crate, hell yeah."
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/lust_crate512.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/lust_crate512.png"
 
 ITEM.Rarity = 8
 
@@ -1473,7 +1473,7 @@ ITEM.Name = "Beta Crate"
 
 ITEM.Description = "This crate contains an item from the Beta Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/beta_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/beta_crate64.png" 
 
 ITEM.Rarity = 2
 
@@ -1490,7 +1490,7 @@ ITEM = {}
 ITEM.ID = 3999
 ITEM.Name = "Box of Chocolates"
 ITEM.Description = "This box contains an item from the Valentine Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/chocolate_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/chocolate_crate64.png"
 ITEM.Rarity = 3
 ITEM.NameColor = Color(255, 0, 255)
 ITEM.Collection = "Valentine Collection"
@@ -1511,7 +1511,7 @@ ITEM.Name = "Cosmetic Crate"
 
 ITEM.Description = "This crate contains an item from the Cosmetic Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/cosmetic_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/cosmetic_crate64.png"
 
 ITEM.Rarity = 3
 
@@ -1528,7 +1528,7 @@ ITEM = {}
 ITEM.ID = 7332
 ITEM.Name = "Paper Tiqers Crate"
 ITEM.Description = "This crate contains a skin from the Paper Tiqers Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/paper_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/paper_crate64.png"
 ITEM.Rarity = 4
 ITEM.Collection = "Paper Tiqers Collection"
 ITEM.Active = true
@@ -1545,7 +1545,7 @@ ITEM.Name = "Crimson Crate"
 
 ITEM.Description = "This crate contains an item from the Crimson Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/crimson_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/crimson_crate64.png"
 
 ITEM.Rarity = 2
 
@@ -1562,7 +1562,7 @@ ITEM = {}
 ITEM.ID = 8999
 ITEM.Name = "Easter Basket"
 ITEM.Description = "This basket contains a rare item from the Easter Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_basket64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_basket64.png"
 ITEM.Rarity = 8
 ITEM.Collection = "Easter Collection"
 ITEM.Active = false
@@ -1577,7 +1577,7 @@ ITEM = {}
 ITEM.ID = 8998
 ITEM.Name = "Easter 2019 Basket"
 ITEM.Description = "This basket contains a rare item from the Easter Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_basket64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_basket64.png"
 ITEM.Rarity = 8
 ITEM.Collection = "Easter Collection"
 ITEM.Contains = {"Egg Hunt Collection", "Easter Collection"}
@@ -1602,7 +1602,7 @@ ITEM = {}
 ITEM.ID = 8997
 ITEM.Name = "Golden Easter Basket"
 ITEM.Description = "This basket contains a rare item from the Easter Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_basket64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_basket64.png"
 ITEM.Rarity = 8
 ITEM.Collection = "Golden Easter Collection"
 ITEM.Contains = {"Easter Collection"}
@@ -1625,7 +1625,7 @@ ITEM = {}
 ITEM.ID = 3995
 ITEM.Name = "Easter 2020 Basket"
 ITEM.Description = "This basket contains a rare item from the Easter Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_basket64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_basket64.png"
 ITEM.Rarity = 8
 ITEM.Collection = "Easter Collection"
 ITEM.Contains = {"Egg Hunt Collection", "Easter Collection"}
@@ -1650,7 +1650,7 @@ ITEM = {}
 ITEM.ID = 851
 ITEM.Name = "Easter Egg"
 ITEM.Description = "This egg contains a rare item from the Egg Hunt Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_egg64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_egg64.png" 
 ITEM.Rarity = 8
 ITEM.Collection = "Egg Hunt Collection"
 ITEM.Active = false
@@ -1668,7 +1668,7 @@ ITEM.Name = "Effect Crate"
 
 ITEM.Description = "This crate contains an item from the Effect Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/effect_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/effect_crate64.png" 
 
 ITEM.Rarity = 5
 
@@ -1689,7 +1689,7 @@ ITEM.Name = "50/50 Crate"
 
 ITEM.Description = "This crate has a 50/50 chance of returning a terrible item, or a great item! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/fiftyfifty_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/fiftyfifty_crate64.png" 
 
 ITEM.Rarity = 4
 
@@ -1712,7 +1712,7 @@ ITEM = {}
 ITEM.ID = 2002
 ITEM.Name = "Holiday Crate"
 ITEM.Description = "This crate contains an item from the Holiday Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/holiday_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/holiday_crate64.png" 
 ITEM.Rarity = 4
 ITEM.Collection = "Holiday Collection"
 ITEM.Active = false
@@ -1725,7 +1725,7 @@ ITEM = {}
 ITEM.ID = 8151
 ITEM.Name = "Hype Crate"
 ITEM.Description = "This crate contains an item from the Hype Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/hype_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/hype_crate64.png"
 ITEM.Rarity = 3
 ITEM.Collection = "Hype Collection"
 ITEM.Active = true
@@ -1744,7 +1744,7 @@ ITEM.NameEffectMods = {Color(255, 0, 0)}
 
 ITEM.Description = "This crate contains an item from the Independence Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/usa_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/usa_crate64.png"
 
 ITEM.Rarity = 8
 
@@ -1767,7 +1767,7 @@ ITEM.Name = "Melee Crate"
 
 ITEM.Description = "This crate contains an item from the Melee Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/melee_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/melee_crate64.png" 
 
 ITEM.Rarity = 2
 
@@ -1785,7 +1785,7 @@ ITEM = {}
 ITEM.ID = 9990
 ITEM.Name = "Omega Crate"
 ITEM.Description = "This crate contains an item from the Omega Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/omega_crate128.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/omega_crate128.png"
 ITEM.Rarity = 4
 ITEM.Collection = "Omega Collection"
 ITEM.Active = false
@@ -1803,7 +1803,7 @@ ITEM.Name = "Model Crate"
 
 ITEM.Description = "This crate contains an item from the Model Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/model_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/model_crate64.png" 
 
 ITEM.Rarity = 3
 
@@ -1820,7 +1820,7 @@ ITEM = {}
 ITEM.ID = 6000
 ITEM.Name = "Paint Crate"
 ITEM.Description = "This crate contains an item from the Paint Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/paint_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/paint_crate64.png"
 ITEM.Rarity = 3
 ITEM.Collection = "Paint Collection"
 ITEM.Active = true
@@ -1832,7 +1832,7 @@ ITEM = {}
 ITEM.ID = 2001
 ITEM.Name = "Pumpkin Crate"
 ITEM.Description = "This crate contains an item from the Pumpkin Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/pumpkin64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/pumpkin64.png" 
 ITEM.Rarity = 8
 ITEM.Collection = "Pumpkin Collection"
 ITEM.Active = false
@@ -1848,7 +1848,7 @@ ITEM.Name = "Spring Crate"
 
 ITEM.Description = "This crate contains an item from the Spring Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/spring_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/spring_crate64.png" 
 
 ITEM.Rarity = 2
 
@@ -1865,7 +1865,7 @@ ITEM = {}
 ITEM.ID = 1051
 ITEM.Name = "Titan Crate"
 ITEM.Description = "This crate contains an item from the Titan Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/titan_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/titan_crate64.png"
 ITEM.Rarity = 4
 ITEM.Collection = "Titan Collection"
 ITEM.Active = true
@@ -1881,7 +1881,7 @@ ITEM.Name = "Urban Style Crate"
 
 ITEM.Description = "This crate contains an item from the Urban Style Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/urban_crate64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/urban_crate64.png" 
 
 ITEM.Rarity = 3
 
@@ -1898,7 +1898,7 @@ ITEM = {}
 ITEM.ID = 3394
 ITEM.Name = "Cinco De Mayo"
 ITEM.Description = "This box contains an item from the Cinco De Mayo Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/cinco_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/cinco_crate64.png"
 ITEM.Rarity = 3
 ITEM.NameEffect = "enchanted"
 ITEM.NameColor = Color(255, 45, 45)
@@ -1921,7 +1921,7 @@ ITEM.Name = "Aqua Palm Crate"
 
 ITEM.Description = "This crate contains an item from the Aqua Palm Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/aqua_palm128.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/aqua_palm128.png" 
 
 ITEM.Rarity = 2
 
@@ -1943,7 +1943,7 @@ ITEM.Name = "Space Crate"
 
 ITEM.Description = "This crate contains an item from the Space Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/space_crate512.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/space_crate512.png"
 
 ITEM.Rarity = 2
 
@@ -1967,7 +1967,7 @@ ITEM.Name = "Valentines 2021 Crate"
 
 ITEM.Description = "This crate contains an item from the Valentines 2021 Crate Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/chocolate_crate64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/chocolate_crate64.png"
 
 ITEM.Rarity = 2
 
@@ -13223,7 +13223,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 80000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/ascended_stat64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/ascended_stat64.png"
 ITEM.ItemCheck = 7
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetStats(pl, slot, item)
@@ -13240,7 +13240,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 80000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/ascended_talent64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/ascended_talent64.png"
 ITEM.ItemCheck = 3
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetTalents(pl, slot, item)
@@ -13257,7 +13257,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 350000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/cosmic_stat64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/cosmic_stat64.png"
 ITEM.ItemCheck = 6
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetStats(pl, slot, item)
@@ -13274,7 +13274,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 350000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/cosmic_talent64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/cosmic_talent64.png"
 ITEM.ItemCheck = 2
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetTalents(pl, slot, item)
@@ -13294,7 +13294,7 @@ ITEM.ShopDesc = "Become a Detective on the next round!\n(Purchasing will give yo
 ITEM.NotDroppable = true
 
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/d_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/d_token.png"
 
 ROLE_TOKEN_PLAYERS = ROLE_TOKEN_PLAYERS or {}
 
@@ -13322,7 +13322,7 @@ m_AddDroppableItem(ITEM, 'Usable')
 -- ITEM.Description = "Using this item will add the Dog Lover talent to any weapon. It will replace the tier two talent if one already exists. Only 200 of these mutators can be produced."
 -- ITEM.Rarity = 8
 -- ITEM.Collection = "Limited Collection"
--- ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+-- ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/name_mutator64.png"
 -- ITEM.ItemCheck = 4
 -- ITEM.ItemUsed = function(pl, slot, item)
 -- 	m_AssignDogLover(pl, slot, item)
@@ -13337,7 +13337,7 @@ ITEM.Description = "I wonder what's inside?"
 ITEM.Rarity = 0
 ITEM.Active = false
 ITEM.Collection = "Gift Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/wrapped_gift64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/wrapped_gift64.png"
 ITEM.Preview = false
 ITEM.CrateShopOverride = "Gift"
 ITEM.ItemUsed = function(pl, slot, item)
@@ -13359,7 +13359,7 @@ ITEM.Rarity = 0
 ITEM.Active = true
 ITEM.Price = 5000
 ITEM.Collection = "Gift Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/empty_gift64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/empty_gift64.png"
 ITEM.ItemCheck = 13
 ITEM.Preview = false
 ITEM.CrateShopOverride = "Gift"
@@ -13378,7 +13378,7 @@ ITEM.Active = false
 ITEM.NewItem = 1577779200
 ITEM.Price = 50000
 ITEM.Collection = "Santa's Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/gift_usable64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/gift_usable64.png"
 ITEM.ItemUsed = function(pl, slot, item)
 	for k, v in pairs(player.GetAll()) do
 		v:m_DropInventoryItem("Holiday Crate")
@@ -13395,7 +13395,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 10000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/highend_stat64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/highend_stat64.png"
 ITEM.ItemCheck = 8
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetStats(pl, slot, item)
@@ -13412,7 +13412,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 10000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/highend_talent64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/highend_talent64.png"
 ITEM.ItemCheck = 4
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetTalents(pl, slot, item)
@@ -13429,7 +13429,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/apache_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/apache_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Apache Round", {"self"})
@@ -13445,7 +13445,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/stalker_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/stalker_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Stalker Round", {"self"})
@@ -13461,7 +13461,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/tdm_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/tdm_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Team Deathmatch", {"self"})
@@ -13477,7 +13477,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/tnt_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/tnt_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "TNT-Tag Round", {"self"})
@@ -13493,7 +13493,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/zombie_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/zombie_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Contagion Round", {"self"})
@@ -13509,7 +13509,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/boss_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/boss_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Deathclaw Round", {"self"})
@@ -13525,7 +13525,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/cock_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/cock_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Apache Round", {"self"})
@@ -13541,7 +13541,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/dragon_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/dragon_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Dragon Round", {"self"})
@@ -13557,7 +13557,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/ffa_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/ffa_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "FFA Round", {"self"})
@@ -13573,7 +13573,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/knife_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/knife_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Gun Game", {"self"})
@@ -13589,7 +13589,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/lava_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/lava_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "The Floor is Lava", {"self"})
@@ -13605,7 +13605,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/one_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/one_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "One in the Chamber", {"self"})
@@ -13621,7 +13621,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 50000
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/seek_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/seek_token.png"
 ITEM.SafetyCheck = 15
 ITEM.ItemUsed = function(pl, slot, item, str)
 	MSE.Events.CanStart(pl, "Prop Hunt", {"self"})
@@ -13636,7 +13636,7 @@ ITEM.Rarity = 8
 ITEM.Active = false
 ITEM.Price = 100
 ITEM.Collection = "Egg Hunt Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_eggold64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_eggold64.png"
 ITEM.ItemUsed = function(pl, slot, item)
 	pl:m_DropInventoryItem("Easter Egg")
 end
@@ -13650,7 +13650,7 @@ ITEM.Rarity = 8
 ITEM.Active = false
 ITEM.Price = 100
 ITEM.Collection = "Egg Hunt Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_eggold64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_eggold64.png"
 ITEM.ItemUsed = function(pl, slot, item)
 	pl:m_DropInventoryItem("Easter Egg")
 end
@@ -13664,7 +13664,7 @@ ITEM.Rarity = 8
 ITEM.Active = false
 ITEM.Price = 100
 ITEM.Collection = "Egg Hunt Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/easter_eggold64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/easter_eggold64.png"
 ITEM.ItemUsed = function(pl, slot, item)
 	pl:m_DropInventoryItem("Easter Egg")
 end
@@ -13680,7 +13680,7 @@ ITEM.NewItem = 1575878400
 ITEM.Price = 40000
 ITEM.Collection = "Gamma Collection"
 ITEM.CrateShopOverride = "Name Mutator"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/name_mutator64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/name_mutator64.png"
 ITEM.ItemCheck = 1
 ITEM.ItemUsed = function(pl, slot, item, str)
 	str = sql.SQLStr(str, true)
@@ -13702,7 +13702,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 600000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/planetary_stat64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/planetary_stat64.png"
 ITEM.ItemCheck = 9
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetStats(pl, slot, item)
@@ -13719,7 +13719,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 600000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/planetary_talent64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/planetary_talent64.png"
 ITEM.ItemCheck = 5
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetTalents(pl, slot, item)
@@ -13740,7 +13740,7 @@ ITEM.NotDroppable = true
 
 
 ITEM.Collection = "Supreme Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/t_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/t_token.png"
 
 ROLE_TOKEN_PLAYERS = ROLE_TOKEN_PLAYERS or {}
 
@@ -13768,7 +13768,7 @@ ITEM.Name = "VIP Token"
 ITEM.Description = "Using this will grant VIP rank benefits permanently!"
 ITEM.Rarity = 8
 ITEM.Collection = "Meta Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/vip_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/vip_token.png"
 ITEM.Active = false
 
 -- Will only be able to be bought with SC, not done yet. Just pushing votekick meme
@@ -13786,7 +13786,7 @@ ITEM.Name = "Vape Event Token"
 ITEM.Description = "Using this will drop every player on the server a Random Vape Item!"
 ITEM.Rarity = 8
 ITEM.Collection = "Meta Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/vape_event128.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/vape_event128.png"
 ITEM.Active = false
 ITEM.NotDroppable = true
 
@@ -13808,7 +13808,7 @@ ITEM.Name = "Dola Event Token"
 ITEM.Description = "Using this will drop every player on the server the Dola Effect Item!"
 ITEM.Rarity = 8
 ITEM.Collection = "Meta Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/dola_drop_event.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/dola_drop_event.png"
 ITEM.Active = false
 ITEM.NotDroppable = true
 
@@ -13921,7 +13921,7 @@ ITEM.Name = "A Random Vape"
 ITEM.ID = 969
 ITEM.Description = "Shouldn't be in inventory"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "Shouldn't be in inventory"
 ITEM.WeaponClass = "weapon_ttt_unarmed"
 
@@ -13965,7 +13965,7 @@ ITEM.Name = "Agree Taunt"
 ITEM.ID = 710
 ITEM.Description = "I concur doctor"
 ITEM.Rarity = 2
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_agree"
 m_AddDroppableItem(ITEM, 'Special')
@@ -13975,7 +13975,7 @@ ITEM.Name = "Call For Taunt"
 ITEM.ID = 711
 ITEM.Description = "Come over here please"
 ITEM.Rarity = 3
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_beacon"
 m_AddDroppableItem(ITEM, 'Special')
@@ -13985,7 +13985,7 @@ ITEM.Name = "Bow Taunt"
 ITEM.ID = 712
 ITEM.Description = "Thank you very much, I know I'm awesome"
 ITEM.Rarity = 3
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_bow"
 m_AddDroppableItem(ITEM, 'Special')
@@ -13995,7 +13995,7 @@ ITEM.Name = "Cheer Taunt"
 ITEM.ID = 713
 ITEM.Description = "WOOOOO"
 ITEM.Rarity = 4
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_cheer"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14005,7 +14005,7 @@ ITEM.Name = "Dab Taunt"
 ITEM.ID = 714
 ITEM.Description = "Hit em with it"
 ITEM.Rarity = 7
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_dab"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14015,7 +14015,7 @@ ITEM.Name = "Disagree Taunt"
 ITEM.ID = 715
 ITEM.Description = "I don't think so"
 ITEM.Rarity = 2
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_disagree"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14025,7 +14025,7 @@ ITEM.Name = "Flail Taunt"
 ITEM.ID = 716
 ITEM.Description = "Asdfghjkl;'"
 ITEM.Rarity = 5
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_flail"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14035,7 +14035,7 @@ ITEM.Name = "Hands Up Taunt"
 ITEM.ID = 717
 ITEM.Description = "Please don't shoot me"
 ITEM.Rarity = 4
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_hands"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14045,7 +14045,7 @@ ITEM.Name = "Laugh Taunt"
 ITEM.ID = 718
 ITEM.Description = "haHA"
 ITEM.Rarity = 5
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_laugh"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14055,7 +14055,7 @@ ITEM.Name = "Play Dead Taunt"
 ITEM.ID = 719
 ITEM.Description = "Too bad you don't get a treat for this one diggity dog"
 ITEM.Rarity = 6
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_lay"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14065,7 +14065,7 @@ ITEM.Name = "Robot Taunt"
 ITEM.ID = 720
 ITEM.Description = "Beep boop beep bop beep"
 ITEM.Rarity = 6
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_robot"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14075,7 +14075,7 @@ ITEM.Name = "Salute Taunt"
 ITEM.ID = 721
 ITEM.Description = "Press F to pay respects"
 ITEM.Rarity = 3
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_salute"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14085,7 +14085,7 @@ ITEM.Name = "Sexy Taunt"
 ITEM.ID = 722
 ITEM.Description = "Work that big booty of yours you sexy thang"
 ITEM.Rarity = 7
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_sexy"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14095,7 +14095,7 @@ ITEM.Name = "Wave Taunt"
 ITEM.ID = 723
 ITEM.Description = "Hey Guys"
 ITEM.Rarity = 4
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_wave"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14105,7 +14105,7 @@ ITEM.Name = "Zombie Climb Taunt"
 ITEM.ID = 724
 ITEM.Description = "Best dance move eva"
 ITEM.Rarity = 7
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_taunt.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_taunt.png"
 ITEM.Collection = "Spring Collection"
 ITEM.WeaponClass = "weapon_ttt_taunt_climb"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14124,7 +14124,7 @@ ITEM.Name = "American Vape"
 ITEM.ID = 900
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_american"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14134,7 +14134,7 @@ ITEM.Name = "USA American Vape"
 ITEM.ID = 2580
 ITEM.Description = "A patriotic vape made in honor of President Trump"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "Independence Collection"
 ITEM.WeaponClass = "weapon_vape_american"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14144,7 +14144,7 @@ ITEM.Name = "Butterfly Vape"
 ITEM.ID = 901
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_butterfly"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14154,7 +14154,7 @@ ITEM.Name = "Custom Vape"
 ITEM.ID = 902
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_custom"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14164,7 +14164,7 @@ ITEM.Name = "Dragon Vape"
 ITEM.ID = 903
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_dragon"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14174,7 +14174,7 @@ ITEM.Name = "Golden Vape"
 ITEM.ID = 904
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_golden"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14184,7 +14184,7 @@ ITEM.Name = "Hallucinogenic Vape"
 ITEM.ID = 905
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_hallucinogenic"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14194,7 +14194,7 @@ ITEM.Name = "Helium Vape"
 ITEM.ID = 906
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_helium"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14204,7 +14204,7 @@ ITEM.Name = "Juicy Vape"
 ITEM.ID = 907
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_juicy"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14214,7 +14214,7 @@ ITEM.Name = "Medicinal Vape"
 ITEM.ID = 908
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape_medicinal"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14224,7 +14224,7 @@ ITEM.Name = "Mega Vape"
 ITEM.ID = 909
 ITEM.Description = "An exclusive collectors item. Causes BIG smoke every 30 minutes, just like a very expensive smoke grenade if you think about it"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "Limited Collection"
 ITEM.WeaponClass = "weapon_vape_mega"
 m_AddDroppableItem(ITEM, 'Special')
@@ -14234,7 +14234,7 @@ ITEM.Name = "White Vape"
 ITEM.ID = 910
 ITEM.Description = "A special item given to people as a remembrance of 4/20"
 ITEM.Rarity = 8
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/moat_vape.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/moat_vape.png"
 ITEM.Collection = "4/20 - 2017 Collection"
 ITEM.WeaponClass = "weapon_vape"
 m_AddDroppableItem(ITEM, 'Special')
@@ -16376,7 +16376,7 @@ ITEM.Bone = "ValveBiped.Bip01_Spine4"
 
 ITEM.NameEffect = "electric"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/tesla_effect.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/tesla_effect.png"
 local particle = "TeslaHitBoxes"
 if CLIENT then
     net.Receive("TeslaEffect",function()
@@ -33592,7 +33592,7 @@ ITEM.ID = 68
 ITEM.Name = "Credit Goblin"
 ITEM.NameColor = Color(0, 255, 128)
 ITEM.Description = "%s_ chance to receive 1 credit after a kill when using this power-up"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/credit_goblin64.png" 
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/credit_goblin64.png" 
 ITEM.Rarity = 4
 ITEM.Collection = "Aqua Palm Collection"
 ITEM.Stats = {
@@ -33610,7 +33610,7 @@ ITEM.ID = 79
 ITEM.Name = "Silent"
 ITEM.NameColor = Color(83, 183, 255)
 ITEM.Description = "Your footsteps are muffled and killing someone has a %s_ chance to muffle their screams"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/silent64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/silent64.png"
 ITEM.Rarity = 4
 ITEM.Collection = "Aqua Palm Collection"
 ITEM.Stats = {
@@ -34348,7 +34348,7 @@ ITEM.Name = "Flower Crate"
 
 ITEM.Description = "This crate contains an item from the Flower Collection! Right click to open"
 
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/flower_crate512.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/flower_crate512.png"
 
 ITEM.Rarity = 2
 
@@ -34738,7 +34738,7 @@ ITEM.Name = "MVP Token"
 ITEM.Description = "Using this will grant MVP rank benefits permanently!"
 ITEM.Rarity = 8
 ITEM.Collection = "Meta Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/mvp_token.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/mvp_token.png"
 ITEM.Active = false
 
 ITEM.ItemUsed = function(pl, slot, item)
@@ -35660,7 +35660,7 @@ ITEM.ID = 19912
 ITEM.Name = "Oldies Crate"
 ITEM.NameEffect = "glow"
 ITEM.Description = "This crate contains an item from the Oldies Collection! Right click to open"
-ITEM.Image = "https://gritskygaming.net/public/ttt/crates/box_legend.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/crates/box_legend.png"
 ITEM.Rarity = 4
 ITEM.Collection = "Oldies Collection"
 ITEM.Active = false
@@ -35694,7 +35694,7 @@ ITEM.Active = false
 ITEM.NewItem = 1575878400
 ITEM.Price = 80000
 ITEM.Collection = "Gamma Collection"
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/ascended_stat64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/ascended_stat64.png"
 ITEM.ItemCheck = 7
 ITEM.ItemUsed = function(pl, slot, item)
 	m_ResetStats(pl, slot, item)
@@ -35709,7 +35709,7 @@ ITEM.ID = 6443
 ITEM.Description = "Using this item allows you to re-roll the type of weapon while keeping the talents."
 ITEM.Rarity = 8
 ITEM.Active = true
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/weapon_mutator64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/weapon_mutator64.png"
 ITEM.Price = 110000
 ITEM.NewItem = 1627790400
 ITEM.Collection = "Gamma Collection"
@@ -35728,7 +35728,7 @@ ITEM.Description = "Using this item allows you to change the rarity of a weapon"
 ITEM.Rarity = 9
 ITEM.Active = true
 ITEM.NotDroppable = true
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/rarity_mutator64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/rarity_mutator64.png"
 ITEM.Price = 150000
 ITEM.NewItem = 1627790400
 ITEM.Collection = "Gamma Collection"
@@ -35927,7 +35927,7 @@ ITEM.Description = "Using this item allows you to max out the level of your weap
 ITEM.Rarity = 8
 ITEM.Active = false
 ITEM.NotDroppable = true
-ITEM.Image = "https://gritskygaming.net/public/ttt/misc/level_mutator64.png"
+ITEM.Image = "https://tttweb.bungo.ca/ttt/misc/level_mutator64.png"
 ITEM.Price = 150000
 ITEM.Collection = "Gamma Collection"
 ITEM.ItemCheck = 9

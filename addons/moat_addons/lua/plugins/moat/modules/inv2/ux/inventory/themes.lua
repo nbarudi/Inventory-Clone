@@ -29,7 +29,7 @@ local gradient_d = Material("vgui/gradient-d")
 local gradient_r = Material("vgui/gradient-r")
 local moat_inv_cooldown = 0
 
-local spooky_url = "https://gritskygaming.net/public/ttt/misc/"
+local spooky_url = "https://tttweb.bungo.ca/ttt/misc/"
 local spooks = {
     [1] = {"1left.png", 0, 0, 0},
     [2] = {"2left.png", 0, 0, 0},
@@ -109,7 +109,7 @@ local function DrawBlur(panel, amount)
 end
 
 local light_gradient = Material("sprites/light_ignorez")
-local circ_gradient = "https://gritskygaming.net/public/ttt/misc/moat_circle_grad.png"
+local circ_gradient = "https://tttweb.bungo.ca/ttt/misc/moat_circle_grad.png"
 
 MOAT_THEME = MOAT_THEME or {}
 MOAT_THEME.Cooldown = CurTime()
@@ -177,7 +177,7 @@ MOAT_THEME.Themes["Original"] = {
             surface_SetDrawColor(0, 0, 0, 100)
             surface_SetMaterial(gradient_d)
             surface_DrawTexturedRect(1, 1, w - 2, h - 2)	
-            cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
+            cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
 
             return
         end
@@ -367,7 +367,7 @@ MOAT_THEME.Themes["Light"] = {
 		if (s.CatLabel == "Store") then
 			draw_RoundedBox(0, 0, 0, w, h, Color(16, 19, 24, s.hover_coloral))
 			draw_RoundedBox(0, w - 1, 0, 1, h, Color(26, 29, 34, 255))
-			cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
+			cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
 	
             return
         end
@@ -538,7 +538,7 @@ MOAT_THEME.Themes["Dark"] = {
 		if (s.CatLabel == "Store") then
 			draw_RoundedBox(0, 0, 0, w, h, Color(16, 19, 24, s.hover_coloral))
 			draw_RoundedBox(0, w - 1, 0, 1, h, Color(26, 29, 34, 155))
-			cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
+			cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
 	
             return
         end
@@ -699,8 +699,8 @@ MOAT_THEME.Themes["Clear"] = {
     CAT_PAINT = function(s, w, h, cur_cat)
 		if (s.CatLabel == "Store") then
 			draw_RoundedBox(0, 0, 0, w, h, Color(16, 19, 24, s.hover_coloral))
-			cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8-2, (h/2)-8-2, 20, 20, Color(0, 0, 0, 25))
-			cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
+			cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8-2, (h/2)-8-2, 20, 20, Color(0, 0, 0, 25))
+			cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
 	
             return
         end
@@ -900,8 +900,8 @@ MOAT_THEME.Themes["Alpha"] = {
     CAT_PAINT = function(s, w, h, cur_cat)
 		if (s.CatLabel == "Store") then
 			draw_RoundedBox(0, 0, 0, w, h, Color(16, 19, 24, s.hover_coloral))
-			cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8-2, (h/2)-8-2, 20, 20, Color(0, 0, 0, 25))
-			cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
+			cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8-2, (h/2)-8-2, 20, 20, Color(0, 0, 0, 25))
+			cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/store.png", (w/2)-8, (h/2)-8, 16, 16, ux.ShiftColor(ux.p.mg.shop, ux.p.mg.shop2, (cur_cat ~= s.CAT_NUM) and (s.hover_coloral > 0 and s.hover_coloral/155 or 0) or 1))
 	
             return
         end

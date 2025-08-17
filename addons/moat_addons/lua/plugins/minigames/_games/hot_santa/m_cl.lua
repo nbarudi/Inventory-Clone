@@ -8,7 +8,7 @@ net.Receive("HS_Begin",function()
         nextdie = CurTime() + 20
     }
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/ffa_song.mp3", 0.5, function(station)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/ffa_song.mp3", 0.5, function(station)
 		hook.Add("Think","HS Music",function()
             if not MOAT_HS then station:Stop() hook.Remove("Think","HS Music") end
         end)
@@ -62,7 +62,7 @@ net.Receive("HS_End",function()
     local players = net.ReadTable()
     local red = net.ReadBool()
     SetGlobalStr("MOAT_MINIGAME_ACTIVE", false)
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/forsen_end.mp3", 0.5)
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/forsen_end.mp3", 0.5)
     MOAT_HS = nil
     kills = {}
     HS_END = {}
@@ -220,7 +220,7 @@ hook.Add("HUDPaint", "moat.test.HS", function()
 end)
 
 net.Receive("HS_Prep",function()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 
     local desc = {
         "Someone random will receive a snowball after this countdown",

@@ -562,7 +562,7 @@ function PANEL:DoRightClick()
     menu:Open()
 
 	if (cdn and cdn.PlayURL and GetConVar "moat_ui_sounds" and GetConVar "moat_ui_sounds":GetInt() and GetConVar "moat_ui_sounds":GetInt() > 0) then
-		cdn.PlayURL "https://gritskygaming.net/public/ttt/misc/tttsounds/appear-online.ogg"
+		cdn.PlayURL "https://tttweb.bungo.ca/ttt/misc/tttsounds/appear-online.ogg"
 	end
 end
 

@@ -12,7 +12,7 @@ if CLIENT then
 	SWEP.DrawAmmo = false
 	SWEP.DrawCrosshair = false
 	
-	SWEP.Icon = "https://gritskygaming.net/public/ttt/misc/turret.png"
+	SWEP.Icon = "https://tttweb.bungo.ca/ttt/misc/turret.png"
     SWEP.EquipMenuData = {
        type = "Sentry",
        desc = "Have the ability to set up a peace sentry that\nattacks anybody who shot someone infront of the\nturret."

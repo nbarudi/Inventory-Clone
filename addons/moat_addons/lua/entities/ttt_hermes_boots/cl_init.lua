@@ -38,7 +38,7 @@ hook.Add("HUDPaint", "TTTHermesBoots", function()
 			return
 		end
 
-		cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/hermes_boots.png", 20, yCoordinate, 64, 64)
+		cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/hermes_boots.png", 20, yCoordinate, 64, 64)
 	end
 end)
 

@@ -140,7 +140,7 @@ net.Receive("PH_Begin",function()
     end)
     MOAT_DISABLE_BUNNY_HOP = true
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/time.mp3", 0.8, function(station)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/time.mp3", 0.8, function(station)
         hook.Add("Think","J Music",function()
             if not MOAT_PH then station:Stop() hook.Remove("Think","J Music") end
         end)
@@ -215,7 +215,7 @@ net.Receive("PH_End",function()
     MOAT_DISABLE_BUNNY_HOP = false
     props_w = net.ReadBool()
     local players = net.ReadTable()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/forsen_end.mp3", 0.5)
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/forsen_end.mp3", 0.5)
     MOAT_PH = nil
     kills = {}
     PH_END = {}
@@ -411,7 +411,7 @@ hook.Add("HUDPaint", "moat.test.LPH", function()
     end
     draw.SimpleTextOutlined(f .. " left", "PH.Big", w/2, 64, col, TEXT_ALIGN_CENTER,TEXT_ALIGN_TOP, 1, Color(0,0,0))
     
-    cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/clock.png", (w/2) - (32), 0, 64, 64, Color(255, 255, 255, 225))
+    cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/clock.png", (w/2) - (32), 0, 64, 64, Color(255, 255, 255, 225))
 
     if (not LocalPlayer():Alive()) or (LocalPlayer():IsSpec()) then return end
 
@@ -482,7 +482,7 @@ surface.CreateFont("moat_GunGameLarge", {
 })
 
 net.Receive("PH_Prep",function()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/https://gritskygaming.net/public/ttt/ning.mp3")
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/https://tttweb.bungo.ca/ttt/ning.mp3")
 
     local desc = {
         "Everyone will be on one of two teams!",

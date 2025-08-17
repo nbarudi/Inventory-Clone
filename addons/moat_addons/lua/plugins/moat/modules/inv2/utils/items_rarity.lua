@@ -53,7 +53,7 @@ function rarity.Register(id)
 	rarity.Roster[id] = setmetatable({ID = id,
 		Name = "Stock",
 		Color = Color(255, 255, 255),
-		Icon = "https://gritskygaming.net/public/ttt/rarities/stock.png",
+		Icon = "https://tttweb.bungo.ca/ttt/rarities/stock.png",
 		Price = {Min = 0, Max = 0}
 	}, mt)
 

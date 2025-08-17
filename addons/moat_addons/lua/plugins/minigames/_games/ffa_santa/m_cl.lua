@@ -38,7 +38,7 @@ net.Receive("FFAS_Begin",function()
         blue_save = 0,
     }
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/ffa_song.mp3", 0.5, function(station)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/ffa_song.mp3", 0.5, function(station)
 		hook.Add("Think","FFAS Music",function()
             if not MOAT_FFAS then station:Stop() hook.Remove("Think","FFAS Music") end
         end)
@@ -361,7 +361,7 @@ surface.CreateFont("moat_GunGameLarge", {
 })
 
 net.Receive("FFAS_Prep",function()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 
     local desc = {
         "Each player will spawn with a snowball",

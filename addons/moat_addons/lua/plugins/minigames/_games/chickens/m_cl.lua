@@ -268,7 +268,7 @@ function MG_CM.PrepRound()
     MG_CM.ResetVars()
     //MOAT_DISABLE_BUNNY_HOP = true
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3",0.5,function(s)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3",0.5,function(s)
 		timer.Simple(30,function()
 			s:Stop()
 		end)
@@ -289,8 +289,8 @@ end
 
 function MG_CM.PlayMusic(num)
 	cdn.PlayURL(table.Random({
-		"https://gritskygaming.net/public/ttt/misc/tttsounds/chicken_song1.mp3", 
-		"https://gritskygaming.net/public/ttt/misc/tttsounds/chicken_song2.mp3"
+		"https://tttweb.bungo.ca/ttt/misc/tttsounds/chicken_song1.mp3", 
+		"https://tttweb.bungo.ca/ttt/misc/tttsounds/chicken_song2.mp3"
 	}), 0.4)
 end
 

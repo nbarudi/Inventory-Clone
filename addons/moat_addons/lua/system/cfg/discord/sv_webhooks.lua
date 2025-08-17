@@ -44,7 +44,7 @@ function post_discord_server_list()
             discord.Embed("Servers",{
                 author = {
                     name = "Gritsky ".. v.Name .. " Official Inventory | Alpha",
-                    icon_url = "https://gritskygaming.net/public/img/logo.png"
+                    icon_url = "https://tttweb.bungo.ca/img/logo.png"
                 },
                 description = "Join: " .. v.ConnectURL,
             })

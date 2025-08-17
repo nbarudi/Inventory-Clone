@@ -77,7 +77,7 @@ net.Receive("lava_Begin",function()
         blue_save = 0,
     }
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/tdm_song.mp3", 0.5, function(station)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/tdm_song.mp3", 0.5, function(station)
         hook.Add("Think","J Music",function()
             if not MOAT_LAVA then station:Stop() hook.Remove("Think","J Music") end
         end)
@@ -184,7 +184,7 @@ net.Receive("LAVA_End",function()
     hook.Remove("PlayerShouldTakeDamage", "TFIL")
 
     local players = net.ReadTable()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/forsen_end.mp3", 0.5)
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/forsen_end.mp3", 0.5)
     MOAT_LAVA = nil
     kills = {}
     LAVA_END = {}
@@ -378,7 +378,7 @@ surface.CreateFont("moat_GunGameLarge", {
 net.Receive("lava_Prep",function()
     local explosive = net.ReadBool()
     LAVA_EX = explosive
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 
     local desc = {
         "Try to be the last one alive by climbing away from the lava!",
@@ -569,7 +569,7 @@ hook.Add("PostDrawTranslucentRenderables", "DrawLava", function(a, b)
 
 	render.Clip(ClipTab, function()
 		if (not LavaTexture) then
-			LavaTexture = cdn.Image("https://gritskygaming.net/public/ttt/minigames/lava.jpg", function(img)
+			LavaTexture = cdn.Image("https://tttweb.bungo.ca/ttt/minigames/lava.jpg", function(img)
 				LavaTexture = img
 			end, "noclamp")
 			return

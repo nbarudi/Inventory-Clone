@@ -300,16 +300,16 @@ function MapVote.Show()
             a:DockMargin(0,0,4,0)
         end
         a:Dock(LEFT)
-        local url = "https://gritskygaming.net/public/ttt/smalllogo.png"
+        local url = "https://tttweb.bungo.ca/ttt/smalllogo.png"
         a:SetText("")
         local ispic = false
         http.Fetch("https://image.gametracker.com/images/maps/160x120/garrysmod/" .. map .. ".jpg",function(_,_,_,c) 
             if not tostring(c):match("^2") then 
-                url = "https://gritskygaming.net/public/ttt/smalllogo.png"
+                url = "https://tttweb.bungo.ca/ttt/smalllogo.png"
             else
                 url = "https://image.gametracker.com/images/maps/160x120/garrysmod/" .. map .. ".jpg"
             end 
-        end,function() url = "https://gritskygaming.net/public/ttt/smalllogo.png" end)
+        end,function() url = "https://tttweb.bungo.ca/ttt/smalllogo.png" end)
         function a:Paint(w,h)
             local votes = 0
             local mine = false
@@ -330,7 +330,7 @@ function MapVote.Show()
             surface.DrawLine(1,147,w-2,147)
             surface.DrawLine(1,187,w-2,187)
 
-            if (url == "https://gritskygaming.net/public/ttt/smalllogo.png") then
+            if (url == "https://tttweb.bungo.ca/ttt/smalllogo.png") then
                 cdn.DrawImage(url,5,5,256,256)
             else
                 cdn.DrawImage(url,5,5,w-10,120)

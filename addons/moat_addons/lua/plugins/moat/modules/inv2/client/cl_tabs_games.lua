@@ -1011,9 +1011,9 @@ end
 
 local bomb_sounds = {
     ["win"] = "https://cdn.notfound.tech/9PIiSvHopONR7egMCMSzWCbhgzTo.mp3",
-    ["boom"] = "https://gritskygaming.net/public/ttt/gamble/bomb.mp3",
-    ["end"] = "https://gritskygaming.net/public/ttt/gamble/loss.mp3",
-	["versus_win"] = "https://gritskygaming.net/public/ttt/gamble/vs_win.mp3",
+    ["boom"] = "https://tttweb.bungo.ca/ttt/gamble/bomb.mp3",
+    ["end"] = "https://tttweb.bungo.ca/ttt/gamble/loss.mp3",
+	["versus_win"] = "https://tttweb.bungo.ca/ttt/gamble/vs_win.mp3",
 	[1] = "https://cdn.notfound.tech/HFYN4ZEEuObwgbs7yoO7UmvgUG9B.mp3",
 	[2] = "https://cdn.notfound.tech/JLbZfNntpdmPOrcRcdRnWDdEG5iU.mp3",
 }
@@ -4130,10 +4130,10 @@ end
 
 local BlackSounds = {
 	Place = {
-		"https://gritskygaming.net/public/ttt/gamble/18-12-19-44j.mp3",
-		"https://gritskygaming.net/public/ttt/gamble/18-12-19-n21.mp3",
-		"https://gritskygaming.net/public/ttt/gamble/18-12-19-X1h.mp3",
-		"https://gritskygaming.net/public/ttt/gamble/18-12-19-t87.mp3"
+		"https://tttweb.bungo.ca/ttt/gamble/18-12-19-44j.mp3",
+		"https://tttweb.bungo.ca/ttt/gamble/18-12-19-n21.mp3",
+		"https://tttweb.bungo.ca/ttt/gamble/18-12-19-X1h.mp3",
+		"https://tttweb.bungo.ca/ttt/gamble/18-12-19-t87.mp3"
 	}
 }
 

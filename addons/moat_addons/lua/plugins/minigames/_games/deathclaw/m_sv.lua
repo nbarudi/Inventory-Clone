@@ -252,26 +252,26 @@ local function moat_BeginRoundBossHooks()
         timer.Simple(1, function()
             MuteForRestart(true)
 			cdn.PlayURL(table.Random({
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/1smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/2smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/3smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/4smithedit.mp3"
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/1smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/2smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/3smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/4smithedit.mp3"
 			}), 2)
 		end)
 
         timer.Create("moat_boss_voices", 30, 0, function()
 			cdn.PlayURL(table.Random({
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/5smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/6smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/7smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/8smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/9smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/10smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/11smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/12smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/13smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/14smithedit.mp3",
-				"https://gritskygaming.net/public/ttt/misc/tttsounds/deathclaw/15smithedit.mp3"
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/5smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/6smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/7smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/8smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/9smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/10smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/11smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/12smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/13smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/14smithedit.mp3",
+				"https://tttweb.bungo.ca/ttt/misc/tttsounds/deathclaw/15smithedit.mp3"
 			}), 2)
         end)
 

@@ -37,7 +37,7 @@ local function AddUser(channel, user, no_suffix, avatar)
 	end
 
 	if (not IsValid(avatar)) then
-		avatar = "https://gritskygaming.net/public/img/logo.png"
+		avatar = "https://tttweb.bungo.ca/img/logo.png"
 	end
 
 	Users[user] = {Channel = channel, Name = name, Avatar = avatar}
@@ -121,9 +121,9 @@ local function Send(user, msg, userName, no_suffix)
 	--[[print( util.TableToJSON {
 			content = msg,
 			username = Name,
-			avatar_url = "https://gritskygaming.net/public/img/logo.png"
+			avatar_url = "https://tttweb.bungo.ca/img/logo.png"
 		})]]--
-	URL = "https://gritskygaming.net/public/whproxy.php?url=" .. URL
+	URL = "https://tttweb.bungo.ca/whproxy.php?url=" .. URL
 	--print(URL .. " " .. msg .. " " .. Name) 
 	HTTP({
 		url = URL,
@@ -134,7 +134,7 @@ local function Send(user, msg, userName, no_suffix)
 		body = util.TableToJSON {
 			content = msg,
 			username = Name,
-			avatar_url = "https://gritskygaming.net/public/img/logo.png"
+			avatar_url = "https://tttweb.bungo.ca/img/logo.png"
 		},
 
 		success = PostSuccess,
@@ -176,7 +176,7 @@ local function Embed(user, msg, userName, no_suffix, fields)
 	end
 
 	HTTP({
-		URL = "https://gritskygaming.net/public/whproxy.php?url=" .. URL,
+		URL = "https://tttweb.bungo.ca/whproxy.php?url=" .. URL,
 		method = 'POST',
 		headers = {
 			['Content-Type'] = 'application/json'

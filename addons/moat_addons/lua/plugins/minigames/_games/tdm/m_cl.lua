@@ -39,7 +39,7 @@ net.Receive("TDM_Begin",function()
         time_end = CurTime() + (60) * 10
     }
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/tdm_song.mp3", 0.5, function(station)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/tdm_song.mp3", 0.5, function(station)
         hook.Add("Think","TDM Music",function()
             if not MOAT_TDM then station:Stop() hook.Remove("Think","TDM Music") end
         end)
@@ -86,7 +86,7 @@ net.Receive("TDM_End",function()
     end
     local players = net.ReadTable()
     local red = net.ReadBool()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/forsen_end.mp3", 0.5)
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/forsen_end.mp3", 0.5)
 
     kills = {}
     TDM_END = {}
@@ -416,7 +416,7 @@ surface.CreateFont("moat_GunGameLarge", {
 })
 
 net.Receive("TDM_Prep",function()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 
     local desc = {
         "Each player will be on one of two teams",

@@ -284,7 +284,7 @@ function make_modelpanel(itemtbl,ITEM_BG)
     return m_DPanelIcon.SIcon
 end
 
-local circ_gradient = "https://gritskygaming.net/public/ttt/misc/moat_circle_grad.png"
+local circ_gradient = "https://tttweb.bungo.ca/ttt/misc/moat_circle_grad.png"
 local cake_icon = Material("icon16/cake.png")
 function m_PopulateShop(pnl)
     local M_SHOP_LIST = vgui.Create("DIconLayout", pnl)
@@ -385,7 +385,7 @@ function m_PopulateShop(pnl)
 
 					m_DrawEnchantedText(item_name[1], "moat_Trebuchet24", (w / 2) - (tw/2) - 1, 5, name_col, Color(0, 255, 255))
                     m_DrawEnchantedText(item_name[2], "moat_Trebuchet24", (w / 2) - (tw2/2) - 1, 25, name_col, Color(0, 255, 255))
-					cdn.SmoothImageRotated("https://gritskygaming.net/public/ttt/misc/new.png", 6, 6, 32, 32, nil, math.sin(CurTime())*15,true)
+					cdn.SmoothImageRotated("https://tttweb.bungo.ca/ttt/misc/new.png", 6, 6, 32, 32, nil, math.sin(CurTime())*15,true)
                 elseif (itemtbl.LimitedShop) then
                     if (itemtbl.Kind == "tier") then
                         m_DrawShadowedText(1, itemtbl.Name .. " Weapon", "moat_Medium5", w / 2, 5, name_col, TEXT_ALIGN_CENTER)

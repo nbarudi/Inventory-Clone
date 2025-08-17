@@ -331,19 +331,19 @@ function meta:m_DropInventoryItem(cmd_item, cmd_class, drop_cosmetics, delay_le_
 
 	if (dropped_item and dropped_item.u and item_to_drop and item_to_drop.Rarity and not dont_show_chat) then
 		if (item_to_drop.Rarity == 6) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_04.wav", .5)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_04.wav", .5)
 			util.GlobalScreenShake(5, 5, 10, 3000)
 		elseif (item_to_drop.Rarity == 7) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_07.wav", .5)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_07.wav", .5)
 			util.GlobalScreenShake(5, 5, 10, 3000)
 		elseif (item_to_drop.Rarity == 8) then
-			self:PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_03.wav", .5)
+			self:PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_03.wav", .5)
 			self:ScreenShake(5, 5, 10, 3000)
 		elseif (item_to_drop.Rarity == 9) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Arcana_drop.mp3", .5)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Arcana_drop.mp3", .5)
 			util.GlobalScreenShake(25, 25, 15, 3000)
 		elseif (tonumber(dropped_item.u) == 912 or item_to_drop.Name:match '^Titan T') then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Titan_Drop.mp3", .5)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Titan_Drop.mp3", .5)
 		end
 	end
 

@@ -19,16 +19,16 @@
 ]]
 
 local EagleSounds = {
-    ["Eagle Aim"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/surreal-headshot-kill.wav",
-    ["Eagle Kill"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/surreal-killshot.wav",
-    ["Eagle Clack"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/metallic-headshot.wav",
-    ["Arcade Tap"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/arcade-bodyshot.wav",
-    ["Arcade Headshot"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/arcade-headshot.wav",
-    ["Arcade Kill"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/arcade-headshot-kill.wav",
-    ["Arcade Missed"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/arcade-killshot.wav",
-    ["FPS Hitmarker"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/fps-bodyshot.wav",
-    ["FPS Headshot"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/fps-headshot.wav",
-    ["Rusty Aim"] = "https://gritskygaming.net/public/ttt/misc/tttsounds/metallic-headshot.wav"
+    ["Eagle Aim"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/surreal-headshot-kill.wav",
+    ["Eagle Kill"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/surreal-killshot.wav",
+    ["Eagle Clack"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/metallic-headshot.wav",
+    ["Arcade Tap"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/arcade-bodyshot.wav",
+    ["Arcade Headshot"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/arcade-headshot.wav",
+    ["Arcade Kill"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/arcade-headshot-kill.wav",
+    ["Arcade Missed"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/arcade-killshot.wav",
+    ["FPS Hitmarker"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/fps-bodyshot.wav",
+    ["FPS Headshot"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/fps-headshot.wav",
+    ["Rusty Aim"] = "https://tttweb.bungo.ca/ttt/misc/tttsounds/metallic-headshot.wav"
 }
 
 hook("Moat.Headshot", function()

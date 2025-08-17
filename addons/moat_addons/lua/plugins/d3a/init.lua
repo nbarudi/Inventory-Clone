@@ -2,7 +2,7 @@ D3A = D3A or {
 	Config = {},
 	Alias = "MGA",
 	Version = "1.51",
-	DefaultAvatar = "https://gritskygaming.net/public/ttt/misc/jarvis_ava_fire.png"
+	DefaultAvatar = "https://tttweb.bungo.ca/ttt/misc/jarvis_ava_fire.png"
 }
 
 D3A.IncludeSV = (SERVER) and include or function() end

@@ -74,7 +74,7 @@ else
 	local playerAvatarRoulette, playerRaffleNick = nil, ''
 	local avatarSize, margin = 128, 25
 	local finalizedRaffle = false
-	local raffleSong, raffleStation = "https://gritskygaming.net/public/ttt/misc/raffle.mp3", nil
+	local raffleSong, raffleStation = "https://tttweb.bungo.ca/ttt/misc/raffle.mp3", nil
 
 	net.Receive("moat_finishRaffle", function()
 		local winningPly = net.ReadEntity()

@@ -3,55 +3,55 @@ sfx = sfx or {}
 
 function sfx.Dustbin()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/drops/decon_notify.mp3"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/drops/decon_notify.mp3"
     end
 end
 
 function sfx.Cut()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/cut.ogg")
+        cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/cut.ogg")
     end
 end
 
 function sfx.Tick()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/cut.ogg", .1)
+        cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/cut.ogg", .1)
     end
 end
 
 function sfx.Bells()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/message.ogg"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/message.ogg"
     end
 end
 
 function sfx.Subtract()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/click4.ogg"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/click4.ogg"
     end
 end
 
 function sfx.Add()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/click5.ogg"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/click5.ogg"
     end
 end
 
 function sfx.Max()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/click6.ogg"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/click6.ogg"
     end
 end
 
 function sfx.Agree()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/accept.mp3"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/accept.mp3"
     end
 end
 
 function sfx.Decline()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/decline.wav"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/decline.wav"
     end
 end
 
@@ -69,7 +69,7 @@ end
 
 function sfx.Click2()
     if (convar:GetInt() > 0) then
-        cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/appear-online.ogg"
+        cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/appear-online.ogg"
     end
 end
 
@@ -106,7 +106,7 @@ function sfx.ClickSound(s, func)
                 if (func) then
                     func()
                 else
-                    cdn.PlayURL"https://gritskygaming.net/public/ttt/misc/tttsounds/appear-online.ogg"
+                    cdn.PlayURL"https://tttweb.bungo.ca/ttt/misc/tttsounds/appear-online.ogg"
                 end
             end
         end

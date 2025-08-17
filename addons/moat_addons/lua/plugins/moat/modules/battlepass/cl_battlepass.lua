@@ -64,19 +64,19 @@ local function GetDroppableWeapons()
 end
 
 local crates = {
-    "https://gritskygaming.net/public/ttt/misc/alpha_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/beta_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/cosmetic_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/paper_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/crimson_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/effect_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/fiftyfifty_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/hype_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/melee_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/model_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/paint_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/spring_crate64.png",
-    "https://gritskygaming.net/public/ttt/misc/titan_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/alpha_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/beta_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/cosmetic_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/paper_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/crimson_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/effect_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/fiftyfifty_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/hype_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/melee_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/model_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/paint_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/spring_crate64.png",
+    "https://tttweb.bungo.ca/ttt/misc/titan_crate64.png",
 }
 
 function make_randompanel(model,ITEM_BG)

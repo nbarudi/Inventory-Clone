@@ -264,7 +264,7 @@ end
 function MG_CG.PrepRound()
     MG_CG.ResetVars()
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/virus/prepare.mp3")
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/virus/prepare.mp3")
 
     hook.Add("HUDPaint", "MG_CG_PREPPAINT", MG_CG.PrepPaint)
     hook.Add("TTTBeginRound", "MG_CG_BEGINHOOK", MG_CG.BeginRound)
@@ -337,10 +337,10 @@ function MG_CG.InfectedChams()
 end
 
 local music_urls = {
-	"https://gritskygaming.net/public/ttt/misc/tttsounds/virus/song1.mp3",
-	"https://gritskygaming.net/public/ttt/misc/tttsounds/virus/song2.mp3",
-	"https://gritskygaming.net/public/ttt/misc/tttsounds/virus/song3.mp3",
-	"https://gritskygaming.net/public/ttt/misc/tttsounds/virus/song4.mp3"
+	"https://tttweb.bungo.ca/ttt/misc/tttsounds/virus/song1.mp3",
+	"https://tttweb.bungo.ca/ttt/misc/tttsounds/virus/song2.mp3",
+	"https://tttweb.bungo.ca/ttt/misc/tttsounds/virus/song3.mp3",
+	"https://tttweb.bungo.ca/ttt/misc/tttsounds/virus/song4.mp3"
 }
 local music_nums = {
     288,

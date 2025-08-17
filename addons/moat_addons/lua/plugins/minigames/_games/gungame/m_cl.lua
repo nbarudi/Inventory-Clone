@@ -126,14 +126,14 @@ end
 function MG_GG.PrepRound()
 	MG_GG.ResetVars()
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 
 	hook.Add("HUDPaint", "MG_GG_PREPPAINT", MG_GG.PrepPaint)
 	hook.Add("TTTBeginRound", "MG_GG_BEGINHOOK", MG_GG.BeginRound)
 end
 
 function MG_GG.BeginRound()
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/happy.mp3")
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/happy.mp3")
 
 	hook.Add("HUDPaint", "MG_GG_ACTIVEPAINT", MG_GG.ActivePaint)
 	hook.Remove("TTTBeginRound", "MG_GG_BEGINHOOK")

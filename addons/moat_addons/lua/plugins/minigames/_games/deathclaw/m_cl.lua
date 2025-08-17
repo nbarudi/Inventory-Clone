@@ -81,7 +81,7 @@ end
 
 local function moat_InitDrawBossHealth()
 	hook.Add("HUDPaint", "moat_DrawBossHealth", moat_DrawBossHealth)
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_battle.mp3", .8, function() end, "stream")
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_battle.mp3", .8, function() end, "stream")
 end
 
 local moat_BossWarningLabel = "INCOMING BOSS ROUND!!!"
@@ -114,7 +114,7 @@ local function moat_PrepareBoss()
 	MOAT_BOSS_ROUND_OVER = false
 	MOAT_ACTIVE_BOSS = true
 
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3",0.5,function(s)
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3",0.5,function(s)
 		timer.Simple(30,function()
 			s:Stop()
 		end)

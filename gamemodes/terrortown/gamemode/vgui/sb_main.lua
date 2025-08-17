@@ -223,7 +223,7 @@ function PANEL:Paint()
 	DrawBlur(self, 3)
 	--[[surface_SetDrawColor(0, 0, 0, 150)
    surface_DrawRect(0, 0, w, h)]]
-	cdn.DrawImage("http://gritskygaming.net/public/ttt/misc/bg-main.png", math.min((w/2) - (3840/2), 0), math.min((h/2) - (2160/2), 0), math.max(3840, h), math.max(2160, w), Color(255, 255, 255, 230))	
+	cdn.DrawImage("http://tttweb.bungo.ca/ttt/misc/bg-main.png", math.min((w/2) - (3840/2), 0), math.min((h/2) - (2160/2), 0), math.max(3840, h), math.max(2160, w), Color(255, 255, 255, 230))	
 	
 	-- surface_SetTexture(logo)
 	-- surface_SetDrawColor(255, 255, 255, 255)

@@ -139,7 +139,7 @@ local function moat_PrepareBoss()
 
 	MOAT_BOSS_ROUND_OVER = false
 	MOAT_ACTIVE_BOSS = true
-	cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+	cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 	hook.Add("HUDPaint", "moat_PrepareBoss", moat_DrawBossWarning)
 	--hook.Add("TTTBeginRound", "moat_StartBoss", moat_InitDrawBossHealth)
 end

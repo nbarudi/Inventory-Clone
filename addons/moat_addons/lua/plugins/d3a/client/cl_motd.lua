@@ -37,7 +37,7 @@ MOTD.SpawnSettings = GetConVar "gritsky_disable_motd"
 MOTD.OpenTime = 0
 MOTD.CurTab = 1
 MOTD.Tabs = {
-	[1] = {"Rules", "https://gritskygaming.net/public/motd.html"},
+	[1] = {"Rules", "https://tttweb.bungo.ca/motd.html"},
 	[2] = {"Donate", "https://store.gritskygaming.net"},
 	[3] = {"Steam Group", "https://steamcommunity.com/groups/gritskygaming"},
 	[4] = {"Discord", "https://discord.gg/vZa4yQNbxk"},
@@ -103,12 +103,12 @@ function MOTD.Open(secs, invalid, changes, new_changes)
     c:Dock(LEFT)
     c:SetWide(250)
     c.Paint = function(s, w, h)
-        cdn.DrawImage("https://gritskygaming.net/public/img/logo.png", 35, 35, 170/2, 118/2)
+        cdn.DrawImage("https://tttweb.bungo.ca/img/logo.png", 35, 35, 170/2, 118/2)
     end
     MOTD.w = vgui.Create("DHTML", p)
     MOTD.w:DockMargin(0, 10, 10, 10)
     MOTD.w:Dock(FILL)
-    MOTD.w:OpenURL("https://gritskygaming.net/public/motd.html")
+    MOTD.w:OpenURL("https://tttweb.bungo.ca/motd.html")
 	MOTD.w:AddFunction("console", "openurlid", function(str)
 		gui.OpenURL(str .. LocalPlayer():SteamID64())
 	end)

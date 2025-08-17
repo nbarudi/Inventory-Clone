@@ -1,5 +1,5 @@
 MOAT_VERSION = "1.7.1"
-MOAT_BG_URL = "https://gritskygaming.net/public/ttt/misc/bg.png"
+MOAT_BG_URL = "https://tttweb.bungo.ca/ttt/misc/bg.png"
 
 surface.CreateFont("moat_Medium11", {
     font = "Trebuchet24",
@@ -252,12 +252,12 @@ end
 
 
 
-local spring_bg_url = "https://gritskygaming.net/public/ttt/misc/spring_bg.png"
+local spring_bg_url = "https://tttweb.bungo.ca/ttt/misc/spring_bg.png"
 local springs = {
-    [1] = {"butterfly1.png", 0, 0, 0, url = "https://gritskygaming.net/public/ttt/misc/butterfly2.png"},
-    [2] = {"butterfly2.png", 0, 0, 0, url = "https://gritskygaming.net/public/ttt/misc/butterfly2.png"},
-    [3] = {"butterfly3.png", 0, 0, 0, url = "https://gritskygaming.net/public/ttt/misc/butterfly3.png"},
-    [4] = {"butterfly4.png", 0, 0, 0, url = "https://gritskygaming.net/public/ttt/misc/butterfly4.png"}
+    [1] = {"butterfly1.png", 0, 0, 0, url = "https://tttweb.bungo.ca/ttt/misc/butterfly2.png"},
+    [2] = {"butterfly2.png", 0, 0, 0, url = "https://tttweb.bungo.ca/ttt/misc/butterfly2.png"},
+    [3] = {"butterfly3.png", 0, 0, 0, url = "https://tttweb.bungo.ca/ttt/misc/butterfly3.png"},
+    [4] = {"butterfly4.png", 0, 0, 0, url = "https://tttweb.bungo.ca/ttt/misc/butterfly4.png"}
 }
 local next_spring = CurTime()
 local current_spring = 1
@@ -1026,14 +1026,14 @@ function m_DrawItemStats(font, x, y, itemtbl, pnl)
                 talent_col2 = Color(100, 100, 100)
                 talent_alpha = Color(100, 100, 100)
 
-				cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/icon-lock.png", 4 + draw_name_x + talent_namew, y + stats_y_add + talents_y_add + 2 + 3, 10, 10, Color(0, 0, 0, 255))
-				cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/icon-lock.png", 3 + draw_name_x + talent_namew, y + stats_y_add + talents_y_add + 2 + 2, 10, 10, Color(100, 100, 100, 255))
+				cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/icon-lock.png", 4 + draw_name_x + talent_namew, y + stats_y_add + talents_y_add + 2 + 3, 10, 10, Color(0, 0, 0, 255))
+				cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/icon-lock.png", 3 + draw_name_x + talent_namew, y + stats_y_add + talents_y_add + 2 + 2, 10, 10, Color(100, 100, 100, 255))
 
 				talent_namew = talent_namew + 8 + 4
             else
 				local lx, ty = 4 + draw_name_x + talent_namew, y + stats_y_add + talents_y_add + 2 + 2
-				cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/icon_star.png", lx, ty, 12, 12, Color(0, 0, 0, 255))
-				cdn.DrawImage("https://gritskygaming.net/public/ttt/misc/icon_star.png", lx - 1, ty - 1, 12, 12, Color(255, 255, 255, 255))
+				cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/icon_star.png", lx, ty, 12, 12, Color(0, 0, 0, 255))
+				cdn.DrawImage("https://tttweb.bungo.ca/ttt/misc/icon_star.png", lx - 1, ty - 1, 12, 12, Color(255, 255, 255, 255))
 
 				talent_namew = talent_namew + 8 + 6
 			end
@@ -6595,15 +6595,15 @@ net.Receive("MOAT_ITEM_OBTAINED", function(len)
 
 	if (last_played <= CurTime() - .5) then
 		if (tbl.item and tbl.item.Rarity == 2) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_01.wav", .2)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_01.wav", .2)
 		elseif (tbl.item and tbl.item.Rarity == 3) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_02.wav", .2)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_02.wav", .2)
 		elseif (tbl.item and tbl.item.Rarity == 4) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_06.wav", .2)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_06.wav", .2)
 		elseif (tbl.item and tbl.item.Rarity == 5) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/Stinger_loot_05.wav", .2)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/Stinger_loot_05.wav", .2)
 		elseif (tbl.item and tbl.item.Name and string.EndsWith(tbl.item.Name, "Mutator")) then
-			cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/legendarydrop.mp3", .2)
+			cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/legendarydrop.mp3", .2)
 		end
 
 		last_played = CurTime()
@@ -6918,7 +6918,7 @@ net.Receive("MOAT_DECON_NOTIFY", function()
     local s = mul == true and "s" or ""
 
 	if (decon_last_played <= CurTime() - .5) then
-		cdn.PlayURL "https://gritskygaming.net/public/ttt/misc/tttsounds//decon_notify.mp3"
+		cdn.PlayURL "https://tttweb.bungo.ca/ttt/misc/tttsounds//decon_notify.mp3"
 
 		decon_last_played = CurTime()
 	end

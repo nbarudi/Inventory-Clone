@@ -41,8 +41,8 @@ net.Receive("FFA_Begin",function()
         blue_save = 0,
     }
     local songs = {
-        "https://gritskygaming.net/public/ttt/minigames/ffa_song.mp3",
-        "https://gritskygaming.net/public/ttt/minigames/tdm_song.mp3"
+        "https://tttweb.bungo.ca/ttt/minigames/ffa_song.mp3",
+        "https://tttweb.bungo.ca/ttt/minigames/tdm_song.mp3"
         }
     math.randomseed(_SEED)
     cdn.PlayURL(table.Random(songs), 0.5, function(station)
@@ -93,7 +93,7 @@ net.Receive("FFA_End",function()
     end
     local players = net.ReadTable()
     local red = net.ReadBool()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/minigames/forsen_end.mp3", 0.5)
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/minigames/forsen_end.mp3", 0.5)
 
     kills = {}
     FFA_END = {}
@@ -376,7 +376,7 @@ surface.CreateFont("moat_GunGameLarge", {
 })
 
 net.Receive("FFA_Prep",function()
-    cdn.PlayURL("https://gritskygaming.net/public/ttt/misc/tttsounds/boss_warning.mp3")
+    cdn.PlayURL("https://tttweb.bungo.ca/ttt/misc/tttsounds/boss_warning.mp3")
 
     local desc = {
         "Each player will spawn with the same weapons!",
